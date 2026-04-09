@@ -5,21 +5,34 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: '#f3f8f4',
-          100: '#e0ede3',
-          200: '#c3dbc9',
-          300: '#9ac3a4',
-          400: '#6da67b',
-          500: '#4d7c5e',
-          600: '#3d6a4e',
-          700: '#325540',
-          800: '#2b4536',
-          900: '#253a2e',
-          950: '#111f19',
+          50: '#f0f4fa',
+          100: '#e0e9f4',
+          200: '#c7d6eb',
+          300: '#a2bcdc',
+          400: '#7a9fcb',
+          500: '#5e8ac7',
+          600: '#4a72b0',
+          700: '#3e5e90',
+          800: '#364f77',
+          900: '#304364',
+          950: '#202b3e',
         },
 
         // --- PALETTES TO TRY ---
-        // Copy any of these into 'brand' above to switch
+
+        stellar: {
+          50: '#edf3ff',
+          100: '#dbe6ff',
+          200: '#c0d0ff',
+          300: '#94b0ff',
+          400: '#6088fc',
+          500: '#3d64f5',
+          600: '#2848e8',
+          700: '#2038d4',
+          800: '#2030ab',
+          900: '#202e86',
+          950: '#161e52',
+        },
 
         ocean: {
           50: '#effcfd',
@@ -105,6 +118,7 @@ export default {
           950: '#3a2108',
         },
 
+        // Background neutrals
         warm: {
           50: '#fdfcfb',
           100: '#f8f6f3',
@@ -117,6 +131,13 @@ export default {
           800: '#675e53',
           900: '#564f46',
           950: '#2e2924',
+        },
+
+        // Dark section background (deep navy, not brown)
+        night: {
+          800: '#141c33',
+          900: '#0e1425',
+          950: '#080c18',
         },
       },
       fontFamily: {

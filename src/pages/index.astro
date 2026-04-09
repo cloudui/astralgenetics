@@ -38,8 +38,37 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- HERO -->
   <section class="relative min-h-screen flex items-end overflow-hidden pb-24 pt-32 lg:pt-0 lg:items-center">
-    <!-- Subtle background -->
+    <!-- Background with star field -->
     <div class="absolute inset-0 bg-gradient-to-b from-brand-50/40 via-warm-50 to-warm-50"></div>
+    <!-- Scattered diamond stars in hero -->
+    <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div class="star sm" style="top:8%;left:12%;"></div>
+      <div class="star" style="top:15%;left:78%;"></div>
+      <div class="star sm" style="top:22%;left:45%;"></div>
+      <div class="star" style="top:6%;left:62%;"></div>
+      <div class="star sm" style="top:30%;left:88%;"></div>
+      <div class="star" style="top:18%;left:32%;"></div>
+      <div class="star sm" style="top:12%;left:92%;"></div>
+      <div class="star sm" style="top:35%;left:5%;"></div>
+      <div class="star bright" style="top:10%;left:55%;"></div>
+      <div class="star bright" style="top:25%;left:72%;"></div>
+      <div class="star bright" style="top:5%;left:35%;"></div>
+      <div class="star" style="top:28%;left:20%;"></div>
+      <div class="star sm" style="top:3%;left:80%;"></div>
+      <div class="star" style="top:38%;left:68%;"></div>
+      <div class="star sm" style="top:20%;left:8%;"></div>
+      <div class="star" style="top:33%;left:52%;"></div>
+      <div class="star sm" style="top:42%;left:15%;"></div>
+      <div class="star sm" style="top:45%;left:40%;"></div>
+      <div class="star" style="top:50%;left:82%;"></div>
+      <div class="star sm" style="top:55%;left:25%;"></div>
+
+      <!-- Saturn — small decorative planet, top-left area -->
+      <svg class="absolute text-brand-400 opacity-30" style="top:12%;left:18%;width:52px;height:52px;" viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="1.2" />
+        <ellipse cx="24" cy="24" rx="22" ry="7" stroke="currentColor" stroke-width="0.8" transform="rotate(-20 24 24)" />
+      </svg>
+    </div>
 
     <div class="relative max-w-7xl mx-auto px-6 lg:px-10 w-full">
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -67,67 +96,113 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <!-- Right: hero illustration — RNA molecule SVG -->
+        <!-- Right: hero illustration — RNA helix within a constellation/orbital field -->
         <div class="hidden lg:flex items-center justify-center">
           <div class="relative w-full max-w-md aspect-square">
-            <!-- Outer glow -->
-            <div class="absolute inset-0 bg-brand-100/50 rounded-full blur-[60px]"></div>
-            <!-- RNA molecule illustration -->
+            <!-- Soft nebula glow -->
+            <div class="absolute inset-8 bg-brand-200/30 rounded-full blur-[80px]"></div>
+            <div class="absolute top-12 right-8 w-40 h-40 bg-brand-100/40 rounded-full blur-[50px]"></div>
+
             <svg class="relative w-full h-full" viewBox="0 0 400 400" fill="none">
-              <!-- Central helix -->
-              <path d="M160,40 Q260,80 160,140 Q60,200 160,260 Q260,320 160,380" stroke="url(#helix1)" stroke-width="2" fill="none" opacity="0.7" />
-              <path d="M240,40 Q140,80 240,140 Q340,200 240,260 Q140,320 240,380" stroke="url(#helix2)" stroke-width="2" fill="none" opacity="0.7" />
-              <!-- Base pair rungs -->
-              <line x1="175" y1="60" x2="225" y2="60" stroke="#9ac3a4" stroke-width="1.5" opacity="0.5" />
-              <line x1="145" y1="110" x2="255" y2="110" stroke="#9ac3a4" stroke-width="1.5" opacity="0.4" />
-              <line x1="165" y1="160" x2="235" y2="160" stroke="#9ac3a4" stroke-width="1.5" opacity="0.5" />
-              <line x1="145" y1="210" x2="255" y2="210" stroke="#9ac3a4" stroke-width="1.5" opacity="0.4" />
-              <line x1="175" y1="260" x2="225" y2="260" stroke="#9ac3a4" stroke-width="1.5" opacity="0.5" />
-              <line x1="145" y1="310" x2="255" y2="310" stroke="#9ac3a4" stroke-width="1.5" opacity="0.4" />
-              <line x1="175" y1="355" x2="225" y2="355" stroke="#9ac3a4" stroke-width="1.5" opacity="0.5" />
-
-              <!-- Functional component nodes -->
-              <circle cx="160" cy="140" r="18" fill="none" stroke="#4d7c5e" stroke-width="1.5" opacity="0.6" />
-              <circle cx="160" cy="140" r="4" fill="#4d7c5e" opacity="0.6" />
-              <text x="160" y="143" text-anchor="middle" fill="#4d7c5e" font-size="7" font-family="DM Sans" opacity="0.5" class="uppercase tracking-widest"></text>
-
-              <circle cx="240" cy="200" r="22" fill="none" stroke="#4d7c5e" stroke-width="1.5" opacity="0.6" />
-              <circle cx="240" cy="200" r="5" fill="#4d7c5e" opacity="0.6" />
-
-              <circle cx="160" cy="260" r="16" fill="none" stroke="#4d7c5e" stroke-width="1.5" opacity="0.6" />
-              <circle cx="160" cy="260" r="3.5" fill="#4d7c5e" opacity="0.6" />
-
-              <!-- Orbiting particles -->
-              <circle cx="300" cy="120" r="2" fill="#6da67b" opacity="0.4">
-                <animate attributeName="cy" values="120;130;120" dur="4s" repeatCount="indefinite" />
-              </circle>
-              <circle cx="100" cy="280" r="1.5" fill="#6da67b" opacity="0.3">
-                <animate attributeName="cy" values="280;270;280" dur="5s" repeatCount="indefinite" />
-              </circle>
-              <circle cx="320" cy="300" r="2.5" fill="#9ac3a4" opacity="0.3">
-                <animate attributeName="cx" values="320;330;320" dur="6s" repeatCount="indefinite" />
-              </circle>
-              <circle cx="80" cy="100" r="2" fill="#9ac3a4" opacity="0.25">
-                <animate attributeName="cy" values="100;110;100" dur="3.5s" repeatCount="indefinite" />
-              </circle>
-
-              <!-- LNP shell (outer) -->
-              <circle cx="200" cy="200" r="170" stroke="#c3dbc9" stroke-width="0.75" fill="none" opacity="0.4" stroke-dasharray="4 6" />
-              <circle cx="200" cy="200" r="155" stroke="#c3dbc9" stroke-width="0.5" fill="none" opacity="0.25" stroke-dasharray="2 8" />
-
-              <!-- Gradient defs -->
               <defs>
                 <linearGradient id="helix1" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#6da67b" stop-opacity="0.3" />
-                  <stop offset="50%" stop-color="#4d7c5e" stop-opacity="0.8" />
-                  <stop offset="100%" stop-color="#6da67b" stop-opacity="0.3" />
+                  <stop offset="0%" stop-color="currentColor" stop-opacity="0.2" class="text-brand-400" />
+                  <stop offset="50%" stop-color="currentColor" stop-opacity="0.7" class="text-brand-600" />
+                  <stop offset="100%" stop-color="currentColor" stop-opacity="0.2" class="text-brand-400" />
                 </linearGradient>
                 <linearGradient id="helix2" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#9ac3a4" stop-opacity="0.3" />
-                  <stop offset="50%" stop-color="#6da67b" stop-opacity="0.7" />
-                  <stop offset="100%" stop-color="#9ac3a4" stop-opacity="0.3" />
+                  <stop offset="0%" stop-color="currentColor" stop-opacity="0.15" class="text-brand-300" />
+                  <stop offset="50%" stop-color="currentColor" stop-opacity="0.5" class="text-brand-500" />
+                  <stop offset="100%" stop-color="currentColor" stop-opacity="0.15" class="text-brand-300" />
                 </linearGradient>
+                <radialGradient id="starglow">
+                  <stop offset="0%" stop-color="currentColor" stop-opacity="0.6" class="text-brand-300" />
+                  <stop offset="100%" stop-color="currentColor" stop-opacity="0" class="text-brand-300" />
+                </radialGradient>
               </defs>
+
+              <!-- Constellation lines (connecting stars around the helix) -->
+              <g class="text-brand-300" opacity="0.3">
+                <line x1="60" y1="55" x2="120" y2="90" stroke="currentColor" stroke-width="0.5" />
+                <line x1="120" y1="90" x2="85" y2="160" stroke="currentColor" stroke-width="0.5" />
+                <line x1="330" y1="80" x2="290" y2="140" stroke="currentColor" stroke-width="0.5" />
+                <line x1="290" y1="140" x2="340" y2="200" stroke="currentColor" stroke-width="0.5" />
+                <line x1="340" y1="200" x2="310" y2="280" stroke="currentColor" stroke-width="0.5" />
+                <line x1="70" y1="300" x2="110" y2="250" stroke="currentColor" stroke-width="0.5" />
+                <line x1="110" y1="250" x2="85" y2="160" stroke="currentColor" stroke-width="0.5" />
+                <line x1="310" y1="280" x2="340" y2="340" stroke="currentColor" stroke-width="0.5" />
+                <line x1="60" y1="55" x2="50" y2="120" stroke="currentColor" stroke-width="0.5" />
+                <line x1="50" y1="120" x2="85" y2="160" stroke="currentColor" stroke-width="0.5" />
+              </g>
+
+              <!-- Constellation star points -->
+              <g class="text-brand-500">
+                <circle cx="60" cy="55" r="2" fill="currentColor" opacity="0.5" />
+                <circle cx="120" cy="90" r="1.5" fill="currentColor" opacity="0.4" />
+                <circle cx="85" cy="160" r="2" fill="currentColor" opacity="0.5" />
+                <circle cx="330" cy="80" r="1.5" fill="currentColor" opacity="0.4" />
+                <circle cx="290" cy="140" r="2" fill="currentColor" opacity="0.5" />
+                <circle cx="340" cy="200" r="1.5" fill="currentColor" opacity="0.4" />
+                <circle cx="310" cy="280" r="2" fill="currentColor" opacity="0.5" />
+                <circle cx="340" cy="340" r="1.5" fill="currentColor" opacity="0.3" />
+                <circle cx="70" cy="300" r="1.5" fill="currentColor" opacity="0.4" />
+                <circle cx="110" cy="250" r="2" fill="currentColor" opacity="0.5" />
+                <circle cx="50" cy="120" r="1.5" fill="currentColor" opacity="0.3" />
+              </g>
+
+              <!-- Star glows (larger faint circles behind key stars) -->
+              <circle cx="60" cy="55" r="8" fill="url(#starglow)" />
+              <circle cx="290" cy="140" r="10" fill="url(#starglow)" />
+              <circle cx="110" cy="250" r="8" fill="url(#starglow)" />
+
+              <!-- Orbital rings around helix -->
+              <ellipse cx="200" cy="200" rx="175" ry="60" stroke="currentColor" stroke-width="0.5" opacity="0.12" class="text-brand-400" transform="rotate(-20 200 200)" />
+              <ellipse cx="200" cy="200" rx="160" ry="50" stroke="currentColor" stroke-width="0.5" opacity="0.08" class="text-brand-400" transform="rotate(15 200 200)" stroke-dasharray="3 5" />
+
+              <!-- Central helix strands -->
+              <path d="M170,50 Q265,95 170,150 Q75,205 170,260 Q265,315 170,370" stroke="url(#helix1)" stroke-width="2" fill="none" />
+              <path d="M230,50 Q135,95 230,150 Q325,205 230,260 Q135,315 230,370" stroke="url(#helix2)" stroke-width="2" fill="none" />
+
+              <!-- Base pair rungs -->
+              <g class="text-brand-300" opacity="0.4">
+                <line x1="182" y1="68" x2="218" y2="68" stroke="currentColor" stroke-width="1" />
+                <line x1="160" y1="115" x2="240" y2="115" stroke="currentColor" stroke-width="1" />
+                <line x1="178" y1="162" x2="222" y2="162" stroke="currentColor" stroke-width="1" />
+                <line x1="160" y1="210" x2="240" y2="210" stroke="currentColor" stroke-width="1" />
+                <line x1="182" y1="258" x2="218" y2="258" stroke="currentColor" stroke-width="1" />
+                <line x1="160" y1="305" x2="240" y2="305" stroke="currentColor" stroke-width="1" />
+                <line x1="182" y1="350" x2="218" y2="350" stroke="currentColor" stroke-width="1" />
+              </g>
+
+              <!-- Functional module nodes on helix -->
+              <circle cx="170" cy="150" r="16" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5" class="text-brand-500" />
+              <circle cx="170" cy="150" r="4" fill="currentColor" opacity="0.6" class="text-brand-600" />
+
+              <circle cx="230" cy="210" r="20" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5" class="text-brand-500" />
+              <circle cx="230" cy="210" r="5" fill="currentColor" opacity="0.6" class="text-brand-600" />
+
+              <circle cx="170" cy="260" r="14" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5" class="text-brand-500" />
+              <circle cx="170" cy="260" r="3.5" fill="currentColor" opacity="0.6" class="text-brand-600" />
+
+              <!-- Twinkling particles drifting slowly -->
+              <circle cx="320" cy="120" r="1.5" fill="currentColor" opacity="0.4" class="text-brand-400">
+                <animate attributeName="opacity" values="0.4;0.15;0.4" dur="4s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="80" cy="280" r="1" fill="currentColor" opacity="0.3" class="text-brand-400">
+                <animate attributeName="opacity" values="0.3;0.1;0.3" dur="5s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="350" cy="310" r="1.5" fill="currentColor" opacity="0.3" class="text-brand-300">
+                <animate attributeName="opacity" values="0.3;0.1;0.3" dur="6s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="55" cy="90" r="1" fill="currentColor" opacity="0.25" class="text-brand-400">
+                <animate attributeName="opacity" values="0.25;0.08;0.25" dur="3.5s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="200" cy="30" r="1" fill="currentColor" opacity="0.3" class="text-brand-400">
+                <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4.5s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="200" cy="380" r="1" fill="currentColor" opacity="0.2" class="text-brand-400">
+                <animate attributeName="opacity" values="0.2;0.05;0.2" dur="5.5s" repeatCount="indefinite" />
+              </circle>
             </svg>
           </div>
         </div>
@@ -135,14 +210,13 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- DIVIDER — thin line -->
+  <!-- DIVIDER -->
   <div class="max-w-7xl mx-auto px-6 lg:px-10"><div class="h-px bg-warm-200"></div></div>
 
   <!-- PLATFORM OVERVIEW -->
   <section id="platform" class="fade-section relative py-28 sm:py-36">
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="grid lg:grid-cols-12 gap-16 lg:gap-20">
-        <!-- Left: section intro -->
         <div class="lg:col-span-5">
           <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Platform</p>
           <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6">
@@ -153,12 +227,9 @@ import Layout from '../layouts/Layout.astro';
           </p>
         </div>
 
-        <!-- Right: two stacked items -->
         <div class="lg:col-span-7 space-y-8">
-          <!-- RNA All-in-One -->
           <div class="relative border border-warm-200 rounded-2xl bg-white p-8 sm:p-10">
             <div class="flex items-start gap-6">
-              <!-- Icon -->
               <div class="shrink-0 w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center">
                 <svg class="w-7 h-7 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
@@ -185,7 +256,6 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
 
-          <!-- LNP Engine -->
           <div class="relative border border-warm-200 rounded-2xl bg-white p-8 sm:p-10">
             <div class="flex items-start gap-6">
               <div class="shrink-0 w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center">
@@ -218,9 +288,27 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- HOW IT WORKS — editorial layout -->
-  <section class="fade-section relative py-28 sm:py-36 bg-brand-50/40">
-    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+  <!-- HOW IT WORKS -->
+  <section class="fade-section relative py-28 sm:py-36 bg-brand-50/40 overflow-hidden">
+    <!-- Stars and small planet -->
+    <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div class="star sm" style="top:15%;left:5%;"></div>
+      <div class="star" style="top:70%;left:90%;"></div>
+      <div class="star bright" style="top:40%;left:95%;"></div>
+      <div class="star sm" style="top:85%;left:15%;"></div>
+      <div class="star" style="top:25%;left:80%;"></div>
+      <div class="star sm" style="top:55%;left:3%;"></div>
+      <div class="star" style="top:10%;left:60%;"></div>
+      <div class="star sm" style="top:90%;left:75%;"></div>
+
+      <!-- Tiny planet with ring -->
+      <svg class="absolute text-brand-400 opacity-25" style="top:8%;right:12%;width:40px;height:40px;" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="7" stroke="currentColor" stroke-width="0.8" />
+        <ellipse cx="18" cy="18" rx="16" ry="5" stroke="currentColor" stroke-width="0.5" transform="rotate(-15 18 18)" />
+      </svg>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
       <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Process</p>
       <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-20">
         From design to execution
@@ -261,7 +349,6 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <div class="lg:col-span-8">
-          <!-- Merged border grid like Isomorphic -->
           <div class="grid sm:grid-cols-2 gap-px bg-warm-200 rounded-2xl overflow-hidden">
             <div class="bg-white p-8 sm:p-10">
               <p class="text-brand-600 text-[11px] font-medium tracking-widest uppercase mb-5">Epigenetic Editing</p>
@@ -303,16 +390,30 @@ import Layout from '../layouts/Layout.astro';
                   <p class="text-warm-500 text-sm leading-relaxed">Direct expression of functional proteins via high-expression IVT RNA constructs, enabling therapeutic protein delivery beyond the limits of AAV.</p>
                 </div>
                 <div class="pt-1">
-                  <!-- Placeholder for future illustration -->
+                  <!-- Constellation-style placeholder illustration -->
                   <div class="aspect-[4/3] rounded-xl bg-brand-50/60 border border-brand-100 flex items-center justify-center">
-                    <svg class="w-20 h-20 text-brand-200" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1">
-                      <circle cx="40" cy="40" r="25" stroke-dasharray="3 4" />
-                      <circle cx="40" cy="40" r="12" />
-                      <circle cx="40" cy="40" r="3" fill="currentColor" stroke="none" />
-                      <line x1="40" y1="15" x2="40" y2="7" />
-                      <line x1="40" y1="65" x2="40" y2="73" />
-                      <line x1="15" y1="40" x2="7" y2="40" />
-                      <line x1="65" y1="40" x2="73" y2="40" />
+                    <svg class="w-32 h-24 text-brand-300" viewBox="0 0 120 90" fill="none">
+                      <!-- Mini constellation: protein structure hint -->
+                      <circle cx="30" cy="20" r="1.5" fill="currentColor" opacity="0.6" />
+                      <circle cx="60" cy="12" r="2" fill="currentColor" opacity="0.7" />
+                      <circle cx="90" cy="25" r="1.5" fill="currentColor" opacity="0.6" />
+                      <circle cx="45" cy="45" r="2.5" fill="currentColor" opacity="0.8" />
+                      <circle cx="75" cy="50" r="2" fill="currentColor" opacity="0.7" />
+                      <circle cx="55" cy="75" r="2" fill="currentColor" opacity="0.7" />
+                      <circle cx="20" cy="60" r="1.5" fill="currentColor" opacity="0.5" />
+                      <circle cx="100" cy="65" r="1.5" fill="currentColor" opacity="0.5" />
+                      <line x1="30" y1="20" x2="60" y2="12" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+                      <line x1="60" y1="12" x2="90" y2="25" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+                      <line x1="30" y1="20" x2="45" y2="45" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+                      <line x1="60" y1="12" x2="45" y2="45" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+                      <line x1="90" y1="25" x2="75" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+                      <line x1="45" y1="45" x2="75" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+                      <line x1="45" y1="45" x2="55" y2="75" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+                      <line x1="75" y1="50" x2="55" y2="75" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+                      <line x1="20" y1="60" x2="45" y2="45" stroke="currentColor" stroke-width="0.5" opacity="0.3" />
+                      <line x1="100" y1="65" x2="75" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.3" />
+                      <!-- Glow on central node -->
+                      <circle cx="45" cy="45" r="8" fill="currentColor" opacity="0.06" />
                     </svg>
                   </div>
                 </div>
@@ -324,9 +425,41 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- VALIDATION -->
-  <section class="fade-section relative py-28 sm:py-36 bg-warm-950 text-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+  <!-- VALIDATION — dark section with stars -->
+  <section class="fade-section relative py-28 sm:py-36 bg-night-900 text-white overflow-hidden">
+    <!-- Star field in dark section -->
+    <div class="absolute inset-0" aria-hidden="true">
+      <div class="star-light sm" style="top:10%;left:8%;"></div>
+      <div class="star-light" style="top:20%;left:72%;"></div>
+      <div class="star-light sm" style="top:45%;left:92%;"></div>
+      <div class="star-light" style="top:70%;left:15%;"></div>
+      <div class="star-light sm" style="top:80%;left:85%;"></div>
+      <div class="star-light sm" style="top:30%;left:40%;"></div>
+      <div class="star-light" style="top:60%;left:55%;"></div>
+      <div class="star-light bright" style="top:15%;left:50%;"></div>
+      <div class="star-light bright" style="top:75%;left:35%;"></div>
+      <div class="star-light sm" style="top:5%;left:25%;"></div>
+      <div class="star-light" style="top:90%;left:60%;"></div>
+      <div class="star-light sm" style="top:50%;left:5%;"></div>
+      <div class="star-light" style="top:35%;left:18%;"></div>
+      <div class="star-light sm" style="top:65%;left:78%;"></div>
+      <div class="star-light bright" style="top:42%;left:65%;"></div>
+      <div class="star-light sm" style="top:85%;left:42%;"></div>
+      <div class="star-light sm" style="top:12%;left:88%;"></div>
+      <div class="star-light" style="top:55%;left:30%;"></div>
+
+      <!-- Ringed planet — bottom right -->
+      <svg class="absolute text-brand-300 opacity-20" style="bottom:10%;right:8%;width:80px;height:80px;" viewBox="0 0 70 70" fill="none">
+        <circle cx="35" cy="35" r="14" stroke="currentColor" stroke-width="1" />
+        <circle cx="35" cy="35" r="14" fill="currentColor" opacity="0.15" />
+        <ellipse cx="35" cy="35" rx="32" ry="9" stroke="currentColor" stroke-width="0.7" transform="rotate(-25 35 35)" />
+      </svg>
+
+      <!-- Subtle nebula glow -->
+      <div class="absolute top-1/4 left-1/3 w-64 h-64 bg-brand-600/5 rounded-full blur-[80px]"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
       <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         <div>
           <p class="text-brand-300 text-xs font-medium tracking-widest uppercase mb-4">Validation</p>
@@ -340,17 +473,17 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="space-y-8">
           <div class="flex items-start gap-6">
-            <div class="font-serif text-4xl text-brand-400 leading-none shrink-0 w-24">>9 kb</div>
+            <div class="font-serif text-4xl text-brand-300 leading-none shrink-0 w-24">>9 kb</div>
             <p class="text-warm-400 leading-relaxed">Successfully delivered large RNA constructs exceeding conventional payload limits</p>
           </div>
           <div class="h-px bg-white/10"></div>
           <div class="flex items-start gap-6">
-            <div class="font-serif text-3xl text-brand-400 leading-none shrink-0 w-24 pt-0.5">Multi</div>
+            <div class="font-serif text-3xl text-brand-300 leading-none shrink-0 w-24 pt-0.5">Multi</div>
             <p class="text-warm-400 leading-relaxed">Demonstrated coordinated multi-component expression from a single transcript</p>
           </div>
           <div class="h-px bg-white/10"></div>
           <div class="flex items-start gap-6">
-            <div class="font-serif text-3xl text-brand-400 leading-none shrink-0 w-24 pt-0.5">LNP+</div>
+            <div class="font-serif text-3xl text-brand-300 leading-none shrink-0 w-24 pt-0.5">LNP+</div>
             <p class="text-warm-400 leading-relaxed">Enhanced delivery performance compared to conventional transfection systems</p>
           </div>
         </div>
@@ -371,7 +504,6 @@ import Layout from '../layouts/Layout.astro';
         </p>
       </div>
 
-      <!-- Editorial list layout instead of cards -->
       <div class="space-y-0 divide-y divide-warm-200">
         <div class="grid md:grid-cols-12 gap-6 md:gap-12 py-12 first:pt-0 group">
           <div class="md:col-span-1">
@@ -434,8 +566,28 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- PARTNERSHIP CTA -->
-  <section id="contact" class="fade-section relative py-28 sm:py-36 bg-brand-50/40">
-    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+  <section id="contact" class="fade-section relative py-28 sm:py-36 bg-brand-50/40 overflow-hidden">
+    <!-- Stars and planet decoration -->
+    <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div class="star sm" style="top:10%;left:30%;"></div>
+      <div class="star" style="top:20%;left:75%;"></div>
+      <div class="star sm" style="top:45%;left:10%;"></div>
+      <div class="star" style="top:60%;left:85%;"></div>
+      <div class="star bright" style="top:35%;left:90%;"></div>
+      <div class="star sm" style="top:80%;left:70%;"></div>
+      <div class="star" style="top:15%;left:50%;"></div>
+      <div class="star sm" style="top:70%;left:25%;"></div>
+      <div class="star sm" style="top:90%;left:55%;"></div>
+
+      <!-- Small planet near bottom left -->
+      <svg class="absolute text-brand-400 opacity-25" style="bottom:15%;left:5%;width:50px;height:50px;" viewBox="0 0 42 42" fill="none">
+        <circle cx="21" cy="21" r="9" stroke="currentColor" stroke-width="0.9" />
+        <circle cx="21" cy="21" r="9" fill="currentColor" opacity="0.1" />
+        <ellipse cx="21" cy="21" rx="19" ry="6" stroke="currentColor" stroke-width="0.6" transform="rotate(-22 21 21)" />
+      </svg>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div>
           <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6">
@@ -455,29 +607,52 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <!-- Decorative SVG — interconnected nodes -->
+        <!-- Constellation network SVG -->
         <div class="hidden lg:flex items-center justify-center">
           <svg class="w-full max-w-sm" viewBox="0 0 300 300" fill="none">
-            <!-- Connection lines -->
-            <line x1="150" y1="60" x2="80" y2="150" stroke="#c3dbc9" stroke-width="1" />
-            <line x1="150" y1="60" x2="220" y2="150" stroke="#c3dbc9" stroke-width="1" />
-            <line x1="80" y1="150" x2="150" y2="240" stroke="#c3dbc9" stroke-width="1" />
-            <line x1="220" y1="150" x2="150" y2="240" stroke="#c3dbc9" stroke-width="1" />
-            <line x1="80" y1="150" x2="220" y2="150" stroke="#c3dbc9" stroke-width="1" />
-            <!-- Nodes -->
-            <circle cx="150" cy="60" r="24" fill="#f3f8f4" stroke="#9ac3a4" stroke-width="1.5" />
-            <circle cx="150" cy="60" r="6" fill="#4d7c5e" />
-            <circle cx="80" cy="150" r="20" fill="#f3f8f4" stroke="#9ac3a4" stroke-width="1.5" />
-            <circle cx="80" cy="150" r="5" fill="#4d7c5e" />
-            <circle cx="220" cy="150" r="20" fill="#f3f8f4" stroke="#9ac3a4" stroke-width="1.5" />
-            <circle cx="220" cy="150" r="5" fill="#4d7c5e" />
-            <circle cx="150" cy="240" r="28" fill="#f3f8f4" stroke="#4d7c5e" stroke-width="1.5" />
-            <circle cx="150" cy="240" r="8" fill="#4d7c5e" />
+            <!-- Constellation connection lines -->
+            <g class="text-brand-300" opacity="0.35">
+              <line x1="150" y1="40" x2="80" y2="120" stroke="currentColor" stroke-width="0.75" />
+              <line x1="150" y1="40" x2="240" y2="100" stroke="currentColor" stroke-width="0.75" />
+              <line x1="80" y1="120" x2="60" y2="200" stroke="currentColor" stroke-width="0.75" />
+              <line x1="80" y1="120" x2="150" y2="170" stroke="currentColor" stroke-width="0.75" />
+              <line x1="240" y1="100" x2="150" y2="170" stroke="currentColor" stroke-width="0.75" />
+              <line x1="240" y1="100" x2="250" y2="200" stroke="currentColor" stroke-width="0.75" />
+              <line x1="60" y1="200" x2="150" y2="260" stroke="currentColor" stroke-width="0.75" />
+              <line x1="250" y1="200" x2="150" y2="260" stroke="currentColor" stroke-width="0.75" />
+              <line x1="150" y1="170" x2="150" y2="260" stroke="currentColor" stroke-width="0.75" />
+              <line x1="60" y1="200" x2="150" y2="170" stroke="currentColor" stroke-width="0.75" />
+              <line x1="250" y1="200" x2="150" y2="170" stroke="currentColor" stroke-width="0.75" />
+            </g>
+
+            <!-- Star nodes -->
+            <g class="text-brand-500">
+              <!-- Top star (largest) -->
+              <circle cx="150" cy="40" r="5" fill="currentColor" opacity="0.6" />
+              <circle cx="150" cy="40" r="14" fill="currentColor" opacity="0.04" />
+              <!-- Left -->
+              <circle cx="80" cy="120" r="3.5" fill="currentColor" opacity="0.5" />
+              <circle cx="80" cy="120" r="10" fill="currentColor" opacity="0.04" />
+              <!-- Right -->
+              <circle cx="240" cy="100" r="3.5" fill="currentColor" opacity="0.5" />
+              <circle cx="240" cy="100" r="10" fill="currentColor" opacity="0.04" />
+              <!-- Center (brightest — the hub) -->
+              <circle cx="150" cy="170" r="6" fill="currentColor" opacity="0.7" />
+              <circle cx="150" cy="170" r="18" fill="currentColor" opacity="0.05" />
+              <!-- Bottom left -->
+              <circle cx="60" cy="200" r="3" fill="currentColor" opacity="0.45" />
+              <!-- Bottom right -->
+              <circle cx="250" cy="200" r="3" fill="currentColor" opacity="0.45" />
+              <!-- Bottom center (second largest) -->
+              <circle cx="150" cy="260" r="4.5" fill="currentColor" opacity="0.55" />
+              <circle cx="150" cy="260" r="12" fill="currentColor" opacity="0.04" />
+            </g>
+
             <!-- Labels -->
-            <text x="150" y="105" text-anchor="middle" fill="#7d7265" font-size="10" font-family="DM Sans">Encode</text>
-            <text x="45" y="190" text-anchor="middle" fill="#7d7265" font-size="10" font-family="DM Sans">Deliver</text>
-            <text x="255" y="190" text-anchor="middle" fill="#7d7265" font-size="10" font-family="DM Sans">Target</text>
-            <text x="150" y="282" text-anchor="middle" fill="#4d7c5e" font-size="11" font-weight="500" font-family="DM Sans">Therapeutic Action</text>
+            <text x="150" y="24" text-anchor="middle" fill="currentColor" font-size="9" font-family="DM Sans" class="text-warm-500" opacity="0.7">Encode</text>
+            <text x="45" y="125" text-anchor="middle" fill="currentColor" font-size="9" font-family="DM Sans" class="text-warm-500" opacity="0.7">Deliver</text>
+            <text x="275" y="105" text-anchor="middle" fill="currentColor" font-size="9" font-family="DM Sans" class="text-warm-500" opacity="0.7">Target</text>
+            <text x="150" y="290" text-anchor="middle" fill="currentColor" font-size="10" font-weight="500" font-family="DM Sans" class="text-brand-600" opacity="0.8">Therapeutic Action</text>
           </svg>
         </div>
       </div>
@@ -533,6 +708,86 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </footer>
 </Layout>
+
+<style>
+  /* Diamond-shaped twinkling stars for light backgrounds */
+  .star {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    opacity: 0.2;
+    animation: twinkle 4s ease-in-out infinite;
+  }
+
+  .star::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 35%, #94b0ff 35%, #94b0ff 65%, transparent 65%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  .star.bright {
+    width: 9px;
+    height: 9px;
+    opacity: 0.3;
+    filter: drop-shadow(0 0 3px rgba(148, 176, 255, 0.5));
+  }
+
+  .star.sm {
+    width: 4px;
+    height: 4px;
+    opacity: 0.12;
+  }
+
+  /* Diamond stars for dark backgrounds */
+  .star-light {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    opacity: 0.3;
+    animation: twinkle 4s ease-in-out infinite;
+  }
+
+  .star-light::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 35%, white 35%, white 65%, transparent 65%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  .star-light.bright {
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+  }
+
+  .star-light.sm {
+    width: 4px;
+    height: 4px;
+    opacity: 0.15;
+  }
+
+  /* Stagger twinkle timings */
+  .star:nth-child(2n), .star-light:nth-child(2n) { animation-delay: -1.5s; }
+  .star:nth-child(3n), .star-light:nth-child(3n) { animation-delay: -2.8s; }
+  .star:nth-child(5n), .star-light:nth-child(5n) { animation-delay: -0.7s; }
+  .star:nth-child(7n), .star-light:nth-child(7n) { animation-delay: -3.3s; }
+  .star:nth-child(4n), .star-light:nth-child(4n) { animation-duration: 5s; }
+  .star:nth-child(6n), .star-light:nth-child(6n) { animation-duration: 6s; }
+  .star:nth-child(8n), .star-light:nth-child(8n) { animation-duration: 7s; animation-delay: -2s; }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: var(--tw-opacity, 0.2); }
+    50% { opacity: 0.04; }
+  }
+
+  .star.bright { --tw-opacity: 0.3; }
+  .star-light { --tw-opacity: 0.3; }
+  .star-light.bright { --tw-opacity: 0.5; }
+</style>
 
 <script>
   // Mobile menu
