@@ -4,386 +4,213 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Astral Genetics — RNA All-in-One Platform">
   <!-- NAV -->
-  <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-midnight-950/80 backdrop-blur-xl">
-    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-2.5 group">
-        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-sm font-bold tracking-tight">AG</div>
-        <span class="text-sm font-semibold tracking-wide uppercase text-white/90 group-hover:text-white transition-colors">Astral Genetics</span>
-      </a>
-      <div class="hidden md:flex items-center gap-8 text-sm text-white/60">
-        <a href="#platform" class="hover:text-white transition-colors">Platform</a>
-        <a href="#capabilities" class="hover:text-white transition-colors">Capabilities</a>
-        <a href="#applications" class="hover:text-white transition-colors">Applications</a>
-        <a href="#company" class="hover:text-white transition-colors">Company</a>
-        <a href="#contact" class="px-4 py-1.5 rounded-full border border-brand-500/40 text-brand-400 hover:bg-brand-500/10 transition-all">Partner With Us</a>
+  <nav class="fixed top-0 w-full z-50 bg-warm-50/80 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="h-20 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-sm font-semibold text-white">AG</div>
+          <span class="text-sm font-medium tracking-wider uppercase text-warm-700">Astral Genetics</span>
+        </a>
+        <div class="hidden md:flex items-center gap-10 text-[13px] tracking-wide text-warm-500">
+          <a href="#platform" class="hover:text-warm-900 transition-colors">Platform</a>
+          <a href="#capabilities" class="hover:text-warm-900 transition-colors">Science</a>
+          <a href="#applications" class="hover:text-warm-900 transition-colors">Applications</a>
+          <a href="#company" class="hover:text-warm-900 transition-colors">Company</a>
+          <a href="#contact" class="ml-2 px-5 py-2 rounded-full bg-brand-600 text-white hover:bg-brand-700 transition-colors">Partner With Us</a>
+        </div>
+        <button id="menu-toggle" class="md:hidden text-warm-600 hover:text-warm-900" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
-      <!-- Mobile menu button -->
-      <button id="menu-toggle" class="md:hidden text-white/60 hover:text-white" aria-label="Menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
     </div>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-white/5 bg-midnight-950/95 backdrop-blur-xl">
-      <div class="px-6 py-4 flex flex-col gap-3 text-sm text-white/60">
-        <a href="#platform" class="hover:text-white py-1">Platform</a>
-        <a href="#capabilities" class="hover:text-white py-1">Capabilities</a>
-        <a href="#applications" class="hover:text-white py-1">Applications</a>
-        <a href="#company" class="hover:text-white py-1">Company</a>
-        <a href="#contact" class="mt-2 text-center px-4 py-2 rounded-full border border-brand-500/40 text-brand-400 hover:bg-brand-500/10 transition-all">Partner With Us</a>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-warm-200 bg-warm-50/95 backdrop-blur-xl">
+      <div class="px-6 py-5 flex flex-col gap-4 text-sm text-warm-600">
+        <a href="#platform" class="hover:text-warm-900">Platform</a>
+        <a href="#capabilities" class="hover:text-warm-900">Science</a>
+        <a href="#applications" class="hover:text-warm-900">Applications</a>
+        <a href="#company" class="hover:text-warm-900">Company</a>
+        <a href="#contact" class="mt-2 text-center px-5 py-2.5 rounded-full bg-brand-600 text-white">Partner With Us</a>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <!-- Background effects -->
-    <div class="absolute inset-0">
-      <div class="absolute inset-0 bg-gradient-to-b from-brand-950/30 via-midnight-950 to-midnight-950"></div>
-      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-brand-500/5 rounded-full blur-[120px]"></div>
-      <div class="absolute top-1/4 right-1/4 w-[300px] h-[300px] bg-brand-600/5 rounded-full blur-[80px]"></div>
-      <!-- Grid pattern -->
-      <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
-      <!-- DNA helix decoration -->
-      <svg class="absolute right-[10%] top-[15%] w-48 h-96 opacity-[0.06] text-brand-400" viewBox="0 0 100 400" fill="none" stroke="currentColor" stroke-width="1">
-        <path d="M20,0 Q80,50 20,100 Q-40,150 20,200 Q80,250 20,300 Q-40,350 20,400" />
-        <path d="M80,0 Q20,50 80,100 Q140,150 80,200 Q20,250 80,300 Q140,350 80,400" />
-        <line x1="35" y1="25" x2="65" y2="25" opacity="0.5" />
-        <line x1="25" y1="75" x2="75" y2="75" opacity="0.5" />
-        <line x1="35" y1="125" x2="65" y2="125" opacity="0.5" />
-        <line x1="25" y1="175" x2="75" y2="175" opacity="0.5" />
-        <line x1="35" y1="225" x2="65" y2="225" opacity="0.5" />
-        <line x1="25" y1="275" x2="75" y2="275" opacity="0.5" />
-        <line x1="35" y1="325" x2="65" y2="325" opacity="0.5" />
-        <line x1="25" y1="375" x2="75" y2="375" opacity="0.5" />
-      </svg>
-    </div>
+  <section class="relative min-h-screen flex items-end overflow-hidden pb-24 pt-32 lg:pt-0 lg:items-center">
+    <!-- Subtle background -->
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-50/40 via-warm-50 to-warm-50"></div>
 
-    <div class="relative max-w-4xl mx-auto px-6 pt-24 pb-16 text-center">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-500/20 bg-brand-500/5 text-brand-400 text-xs font-medium tracking-wide uppercase mb-8">
-        <span class="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse"></span>
-        RNA All-in-One Platform
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10 w-full">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <!-- Left: text -->
+        <div>
+          <p class="text-brand-600 text-sm font-medium tracking-widest uppercase mb-6">RNA Therapeutics Platform</p>
+
+          <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-warm-950 mb-8">
+            One RNA.<br />
+            Multiple functions.<br />
+            <em class="text-brand-600">Real medicine.</em>
+          </h1>
+
+          <p class="text-lg text-warm-500 max-w-lg leading-relaxed mb-10">
+            A proprietary platform that integrates multiple gene editing and regulatory components into a single, deliverable RNA molecule — paired with large-fragment delivery systems engineered to overcome the limits of conventional genetic medicine.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="#platform" class="px-7 py-3.5 rounded-full bg-brand-600 text-white font-medium hover:bg-brand-700 transition-all hover:shadow-lg hover:shadow-brand-200">
+              Explore Platform
+            </a>
+            <a href="#capabilities" class="px-7 py-3.5 rounded-full border border-warm-300 text-warm-600 hover:border-warm-400 hover:text-warm-800 font-medium transition-all">
+              View Science
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: hero illustration — RNA molecule SVG -->
+        <div class="hidden lg:flex items-center justify-center">
+          <div class="relative w-full max-w-md aspect-square">
+            <!-- Outer glow -->
+            <div class="absolute inset-0 bg-brand-100/50 rounded-full blur-[60px]"></div>
+            <!-- RNA molecule illustration -->
+            <svg class="relative w-full h-full" viewBox="0 0 400 400" fill="none">
+              <!-- Central helix -->
+              <path d="M160,40 Q260,80 160,140 Q60,200 160,260 Q260,320 160,380" stroke="url(#helix1)" stroke-width="2" fill="none" opacity="0.7" />
+              <path d="M240,40 Q140,80 240,140 Q340,200 240,260 Q140,320 240,380" stroke="url(#helix2)" stroke-width="2" fill="none" opacity="0.7" />
+              <!-- Base pair rungs -->
+              <line x1="175" y1="60" x2="225" y2="60" stroke="#9ac3a4" stroke-width="1.5" opacity="0.5" />
+              <line x1="145" y1="110" x2="255" y2="110" stroke="#9ac3a4" stroke-width="1.5" opacity="0.4" />
+              <line x1="165" y1="160" x2="235" y2="160" stroke="#9ac3a4" stroke-width="1.5" opacity="0.5" />
+              <line x1="145" y1="210" x2="255" y2="210" stroke="#9ac3a4" stroke-width="1.5" opacity="0.4" />
+              <line x1="175" y1="260" x2="225" y2="260" stroke="#9ac3a4" stroke-width="1.5" opacity="0.5" />
+              <line x1="145" y1="310" x2="255" y2="310" stroke="#9ac3a4" stroke-width="1.5" opacity="0.4" />
+              <line x1="175" y1="355" x2="225" y2="355" stroke="#9ac3a4" stroke-width="1.5" opacity="0.5" />
+
+              <!-- Functional component nodes -->
+              <circle cx="160" cy="140" r="18" fill="none" stroke="#4d7c5e" stroke-width="1.5" opacity="0.6" />
+              <circle cx="160" cy="140" r="4" fill="#4d7c5e" opacity="0.6" />
+              <text x="160" y="143" text-anchor="middle" fill="#4d7c5e" font-size="7" font-family="DM Sans" opacity="0.5" class="uppercase tracking-widest"></text>
+
+              <circle cx="240" cy="200" r="22" fill="none" stroke="#4d7c5e" stroke-width="1.5" opacity="0.6" />
+              <circle cx="240" cy="200" r="5" fill="#4d7c5e" opacity="0.6" />
+
+              <circle cx="160" cy="260" r="16" fill="none" stroke="#4d7c5e" stroke-width="1.5" opacity="0.6" />
+              <circle cx="160" cy="260" r="3.5" fill="#4d7c5e" opacity="0.6" />
+
+              <!-- Orbiting particles -->
+              <circle cx="300" cy="120" r="2" fill="#6da67b" opacity="0.4">
+                <animate attributeName="cy" values="120;130;120" dur="4s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="100" cy="280" r="1.5" fill="#6da67b" opacity="0.3">
+                <animate attributeName="cy" values="280;270;280" dur="5s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="320" cy="300" r="2.5" fill="#9ac3a4" opacity="0.3">
+                <animate attributeName="cx" values="320;330;320" dur="6s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="80" cy="100" r="2" fill="#9ac3a4" opacity="0.25">
+                <animate attributeName="cy" values="100;110;100" dur="3.5s" repeatCount="indefinite" />
+              </circle>
+
+              <!-- LNP shell (outer) -->
+              <circle cx="200" cy="200" r="170" stroke="#c3dbc9" stroke-width="0.75" fill="none" opacity="0.4" stroke-dasharray="4 6" />
+              <circle cx="200" cy="200" r="155" stroke="#c3dbc9" stroke-width="0.5" fill="none" opacity="0.25" stroke-dasharray="2 8" />
+
+              <!-- Gradient defs -->
+              <defs>
+                <linearGradient id="helix1" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#6da67b" stop-opacity="0.3" />
+                  <stop offset="50%" stop-color="#4d7c5e" stop-opacity="0.8" />
+                  <stop offset="100%" stop-color="#6da67b" stop-opacity="0.3" />
+                </linearGradient>
+                <linearGradient id="helix2" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#9ac3a4" stop-opacity="0.3" />
+                  <stop offset="50%" stop-color="#6da67b" stop-opacity="0.7" />
+                  <stop offset="100%" stop-color="#9ac3a4" stop-opacity="0.3" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
       </div>
-
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
-        One RNA. Multiple Functions.<br />
-        <span class="bg-gradient-to-r from-brand-400 to-brand-600 bg-clip-text text-transparent">Real Genetic Medicine.</span>
-      </h1>
-
-      <p class="text-lg sm:text-xl text-white/50 max-w-2xl mx-auto mb-4 leading-relaxed">
-        A proprietary platform that integrates multiple gene editing and regulatory components into a single, deliverable RNA molecule.
-      </p>
-
-      <p class="text-sm text-white/30 font-mono mb-10">
-        From multi-vector complexity → single-molecule precision
-      </p>
-
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#platform" class="px-6 py-3 rounded-lg bg-brand-600 hover:bg-brand-500 text-white font-medium transition-all hover:shadow-lg hover:shadow-brand-500/20">
-          Explore Platform
-        </a>
-        <a href="#capabilities" class="px-6 py-3 rounded-lg border border-white/10 text-white/70 hover:text-white hover:border-white/20 font-medium transition-all">
-          View Technology
-        </a>
-      </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/20">
-      <span class="text-xs tracking-widest uppercase">Scroll</span>
-      <div class="w-px h-8 bg-gradient-to-b from-white/20 to-transparent"></div>
     </div>
   </section>
+
+  <!-- DIVIDER — thin line -->
+  <div class="max-w-7xl mx-auto px-6 lg:px-10"><div class="h-px bg-warm-200"></div></div>
 
   <!-- PLATFORM OVERVIEW -->
-  <section id="platform" class="relative py-24 sm:py-32">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="max-w-2xl mb-16">
-        <p class="text-brand-400 text-sm font-medium tracking-wide uppercase mb-3">Platform</p>
-        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">A New Architecture for Genetic Medicine</h2>
-        <p class="text-white/40 text-lg">Traditional approaches fragment complexity across multiple systems. We unify them.</p>
-      </div>
+  <section id="platform" class="fade-section relative py-28 sm:py-36">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-12 gap-16 lg:gap-20">
+        <!-- Left: section intro -->
+        <div class="lg:col-span-5">
+          <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Platform</p>
+          <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6">
+            A new architecture for genetic medicine
+          </h2>
+          <p class="text-warm-500 text-lg leading-relaxed">
+            Traditional approaches fragment complexity across multiple delivery vectors and editing systems. Our platform unifies them into a single molecule.
+          </p>
+        </div>
 
-      <div class="grid md:grid-cols-2 gap-6">
-        <!-- RNA All-in-One -->
-        <div class="group relative rounded-2xl border border-white/5 bg-white/[0.02] p-8 hover:border-brand-500/20 hover:bg-white/[0.03] transition-all duration-300">
-          <div class="w-12 h-12 rounded-xl bg-brand-500/10 flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
-            </svg>
+        <!-- Right: two stacked items -->
+        <div class="lg:col-span-7 space-y-8">
+          <!-- RNA All-in-One -->
+          <div class="relative border border-warm-200 rounded-2xl bg-white p-8 sm:p-10">
+            <div class="flex items-start gap-6">
+              <!-- Icon -->
+              <div class="shrink-0 w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center">
+                <svg class="w-7 h-7 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="font-serif text-2xl text-warm-900 mb-3">RNA All-in-One</h3>
+                <p class="text-warm-500 leading-relaxed mb-5">A single IVT RNA encoding all required functional components for coordinated therapeutic action.</p>
+                <div class="grid sm:grid-cols-3 gap-4 text-sm text-warm-600">
+                  <div class="flex items-start gap-2">
+                    <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    Multi-component integration in one transcript
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    Synchronized intracellular release
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    Reduced variability
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 class="text-xl font-semibold mb-3">RNA All-in-One Platform</h3>
-          <p class="text-white/40 mb-6 leading-relaxed">A single IVT RNA encoding all required functional components for coordinated therapeutic action.</p>
-          <ul class="space-y-3 text-sm text-white/50">
-            <li class="flex items-start gap-2.5">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500 shrink-0"></span>
-              Multi-component integration in one transcript
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500 shrink-0"></span>
-              Synchronized intracellular release and activity
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500 shrink-0"></span>
-              Reduced variability, improved consistency
-            </li>
-          </ul>
-        </div>
 
-        <!-- LNP Engine -->
-        <div class="group relative rounded-2xl border border-white/5 bg-white/[0.02] p-8 hover:border-brand-500/20 hover:bg-white/[0.03] transition-all duration-300">
-          <div class="w-12 h-12 rounded-xl bg-brand-500/10 flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-3">Large-Payload LNP Engine</h3>
-          <p class="text-white/40 mb-6 leading-relaxed">A delivery system purpose-built for next-generation RNA therapeutics.</p>
-          <ul class="space-y-3 text-sm text-white/50">
-            <li class="flex items-start gap-2.5">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500 shrink-0"></span>
-              Efficient delivery of large RNA payloads (9kb+)
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500 shrink-0"></span>
-              Optimized for hepatic targeting and systemic administration
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500 shrink-0"></span>
-              Scalable formulation for clinical translation
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="relative py-24 sm:py-32 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="max-w-2xl mb-16">
-        <p class="text-brand-400 text-sm font-medium tracking-wide uppercase mb-3">Process</p>
-        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">From Design to Execution — In One System</h2>
-      </div>
-
-      <div class="grid sm:grid-cols-3 gap-8">
-        <div class="relative">
-          <div class="text-5xl font-bold text-white/[0.04] mb-4 font-mono">01</div>
-          <h3 class="text-lg font-semibold mb-2 -mt-4">Encode</h3>
-          <p class="text-white/40 text-sm leading-relaxed">Multiple functional elements are designed within a single RNA construct, enabling coordinated multi-component activity.</p>
-        </div>
-        <div class="relative">
-          <div class="text-5xl font-bold text-white/[0.04] mb-4 font-mono">02</div>
-          <h3 class="text-lg font-semibold mb-2 -mt-4">Deliver</h3>
-          <p class="text-white/40 text-sm leading-relaxed">Proprietary LNP systems transport large RNA payloads into target tissues with high efficiency and specificity.</p>
-        </div>
-        <div class="relative">
-          <div class="text-5xl font-bold text-white/[0.04] mb-4 font-mono">03</div>
-          <h3 class="text-lg font-semibold mb-2 -mt-4">Execute</h3>
-          <p class="text-white/40 text-sm leading-relaxed">Intracellular processing releases independent modules, enabling coordinated biological function from a single delivery event.</p>
-        </div>
-      </div>
-
-      <!-- Connecting line -->
-      <div class="hidden sm:block relative mt-4">
-        <div class="absolute top-0 left-[16.67%] right-[16.67%] h-px bg-gradient-to-r from-transparent via-brand-500/20 to-transparent"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CAPABILITIES -->
-  <section id="capabilities" class="relative py-24 sm:py-32 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="max-w-2xl mb-16">
-        <p class="text-brand-400 text-sm font-medium tracking-wide uppercase mb-3">Capabilities</p>
-        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">A Versatile Engine for Genetic Modulation</h2>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl border border-white/5 bg-white/[0.02] p-7">
-          <div class="text-brand-400 text-xs font-mono tracking-wider uppercase mb-4">Epigenetic Editing</div>
-          <h3 class="text-lg font-semibold mb-3">CRISPRi / Modulation</h3>
-          <p class="text-white/40 text-sm mb-5 leading-relaxed">Programmable, non-permanent control of gene expression without altering the DNA sequence.</p>
-          <ul class="space-y-2 text-sm text-white/50">
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500/60 shrink-0"></span>
-              Multi-target silencing within a single construct
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500/60 shrink-0"></span>
-              Tumor and viral transcriptional reprogramming
-            </li>
-          </ul>
-        </div>
-
-        <div class="rounded-2xl border border-white/5 bg-white/[0.02] p-7">
-          <div class="text-brand-400 text-xs font-mono tracking-wider uppercase mb-4">Genome Editing</div>
-          <h3 class="text-lg font-semibold mb-3">Large Fragment Integration</h3>
-          <p class="text-white/40 text-sm mb-5 leading-relaxed">Efficient modification beyond single-base editing, supporting complex genetic corrections.</p>
-          <ul class="space-y-2 text-sm text-white/50">
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500/60 shrink-0"></span>
-              Supports large genetic insertions
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500/60 shrink-0"></span>
-              Enables correction of complex mutations
-            </li>
-          </ul>
-        </div>
-
-        <div class="rounded-2xl border border-white/5 bg-white/[0.02] p-7">
-          <div class="text-brand-400 text-xs font-mono tracking-wider uppercase mb-4">Protein Replacement</div>
-          <h3 class="text-lg font-semibold mb-3">In Vivo RNA Expression</h3>
-          <p class="text-white/40 text-sm mb-5 leading-relaxed">Direct expression of functional proteins via high-expression IVT RNA constructs.</p>
-          <ul class="space-y-2 text-sm text-white/50">
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500/60 shrink-0"></span>
-              High-expression IVT RNA constructs
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-500/60 shrink-0"></span>
-              Therapeutic delivery beyond AAV limits
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VALIDATION / STATS -->
-  <section class="relative py-24 sm:py-32 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="rounded-2xl border border-white/5 bg-gradient-to-br from-brand-950/40 to-midnight-900/20 p-8 sm:p-12">
-        <p class="text-brand-400 text-sm font-medium tracking-wide uppercase mb-3">Validation</p>
-        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-8">Engineered for Real-World Performance</h2>
-
-        <div class="grid sm:grid-cols-3 gap-8">
-          <div>
-            <div class="text-3xl font-bold text-brand-400 mb-2">>9 kb</div>
-            <p class="text-white/40 text-sm leading-relaxed">Successfully delivered large RNA constructs exceeding conventional payload limits</p>
-          </div>
-          <div>
-            <div class="text-3xl font-bold text-brand-400 mb-2">Multi-component</div>
-            <p class="text-white/40 text-sm leading-relaxed">Demonstrated coordinated expression from a single transcript</p>
-          </div>
-          <div>
-            <div class="text-3xl font-bold text-brand-400 mb-2">Enhanced delivery</div>
-            <p class="text-white/40 text-sm leading-relaxed">Superior performance compared to conventional transfection systems</p>
-          </div>
-        </div>
-
-        <p class="text-white/30 text-sm mt-8 pt-6 border-t border-white/5">Our platform is built not only for innovation—but for translatability.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- APPLICATIONS -->
-  <section id="applications" class="relative py-24 sm:py-32 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="max-w-2xl mb-16">
-        <p class="text-brand-400 text-sm font-medium tracking-wide uppercase mb-3">Applications</p>
-        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Targeting Diseases Where Simpler Tools Fail</h2>
-        <p class="text-white/40 text-lg">Designed for problems that cannot be solved with single-edit approaches.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="group rounded-2xl border border-white/5 bg-white/[0.02] p-7 hover:border-brand-500/15 transition-all duration-300">
-          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center mb-5">
-            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold mb-3">Liver-Directed RNA Medicine</h3>
-          <ul class="space-y-2 text-sm text-white/50">
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-emerald-500/60 shrink-0"></span>
-              Chronic viral diseases (e.g., HBV)
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-emerald-500/60 shrink-0"></span>
-              High-burden protein deficiencies
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-emerald-500/60 shrink-0"></span>
-              Precision hepatic gene modulation
-            </li>
-          </ul>
-        </div>
-
-        <div class="group rounded-2xl border border-white/5 bg-white/[0.02] p-7 hover:border-brand-500/15 transition-all duration-300">
-          <div class="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center mb-5">
-            <svg class="w-5 h-5 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.491 48.491 0 0 1-4.163-.3c.186 1.613.466 3.193.834 4.73.878-.052 1.77-.08 2.672-.08h2.172c.903 0 1.794.028 2.672.08.368-1.537.648-3.117.834-4.73a48.28 48.28 0 0 1-4.163.3.64.64 0 0 1-.657-.643v0Z" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 10.5c1.768 5.105 4.186 9.592 7.098 13.195.19.234.499.305.752.305s.563-.071.752-.305C17.564 20.092 19.982 15.605 21.75 10.5" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold mb-3">High-Complexity Genetic Disorders</h3>
-          <ul class="space-y-2 text-sm text-white/50">
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-violet-500/60 shrink-0"></span>
-              Diseases requiring large gene insertion
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-violet-500/60 shrink-0"></span>
-              Multi-component correction strategies
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-violet-500/60 shrink-0"></span>
-              Beyond base and prime editing limits
-            </li>
-          </ul>
-        </div>
-
-        <div class="group rounded-2xl border border-white/5 bg-white/[0.02] p-7 hover:border-brand-500/15 transition-all duration-300">
-          <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mb-5">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold mb-3">Precision Oncology</h3>
-          <ul class="space-y-2 text-sm text-white/50">
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-amber-500/60 shrink-0"></span>
-              Epigenetic reprogramming of tumor pathways
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-amber-500/60 shrink-0"></span>
-              Tumor microenvironment modulation
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="mt-1.5 w-1 h-1 rounded-full bg-amber-500/60 shrink-0"></span>
-              Multi-target intervention, single therapy
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PARTNERSHIP CTA -->
-  <section id="contact" class="relative py-24 sm:py-32 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="relative rounded-2xl border border-brand-500/10 overflow-hidden">
-        <!-- Background -->
-        <div class="absolute inset-0 bg-gradient-to-br from-brand-950/60 via-midnight-900/40 to-midnight-950"></div>
-        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-500/5 rounded-full blur-[100px]"></div>
-
-        <div class="relative p-8 sm:p-12 lg:p-16">
-          <div class="max-w-2xl">
-            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Partner With Astral Genetics</h2>
-            <p class="text-white/40 text-lg mb-8 leading-relaxed">
-              We collaborate with leading biopharma and research organizations to unlock new therapeutic possibilities through multi-component genetic engineering, large payload delivery, and strategies beyond conventional CRISPR.
-            </p>
-
-            <div class="flex flex-col sm:flex-row gap-4">
-              <a href="mailto:partnerships@astralgenetics.com" class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-brand-600 hover:bg-brand-500 text-white font-medium transition-all hover:shadow-lg hover:shadow-brand-500/20">
-                Start a Collaboration
-              </a>
-              <a href="mailto:info@astralgenetics.com" class="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-white/10 text-white/70 hover:text-white hover:border-white/20 font-medium transition-all">
-                Request Corporate Deck
-              </a>
+          <!-- LNP Engine -->
+          <div class="relative border border-warm-200 rounded-2xl bg-white p-8 sm:p-10">
+            <div class="flex items-start gap-6">
+              <div class="shrink-0 w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center">
+                <svg class="w-7 h-7 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="font-serif text-2xl text-warm-900 mb-3">Large-Payload LNP Engine</h3>
+                <p class="text-warm-500 leading-relaxed mb-5">A delivery system purpose-built for next-generation RNA therapeutics.</p>
+                <div class="grid sm:grid-cols-3 gap-4 text-sm text-warm-600">
+                  <div class="flex items-start gap-2">
+                    <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    Large RNA payloads (9kb+)
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    Hepatic targeting &amp; systemic delivery
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    Scalable for clinical translation
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -391,50 +218,342 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- HOW IT WORKS — editorial layout -->
+  <section class="fade-section relative py-28 sm:py-36 bg-brand-50/40">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Process</p>
+      <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-20">
+        From design to execution
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-px bg-warm-200 rounded-2xl overflow-hidden">
+        <div class="bg-white p-10 sm:p-12">
+          <div class="font-serif text-6xl text-brand-200 mb-6">1</div>
+          <h3 class="font-serif text-2xl text-warm-900 mb-3">Encode</h3>
+          <p class="text-warm-500 leading-relaxed">Multiple functional elements are designed within a single RNA construct, enabling coordinated multi-component activity from one molecule.</p>
+        </div>
+        <div class="bg-white p-10 sm:p-12">
+          <div class="font-serif text-6xl text-brand-200 mb-6">2</div>
+          <h3 class="font-serif text-2xl text-warm-900 mb-3">Deliver</h3>
+          <p class="text-warm-500 leading-relaxed">Proprietary LNP systems transport large RNA payloads into target tissues with high efficiency and cell-type specificity.</p>
+        </div>
+        <div class="bg-white p-10 sm:p-12">
+          <div class="font-serif text-6xl text-brand-200 mb-6">3</div>
+          <h3 class="font-serif text-2xl text-warm-900 mb-3">Execute</h3>
+          <p class="text-warm-500 leading-relaxed">Intracellular processing releases independent modules, enabling coordinated biological function from a single delivery event.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section id="capabilities" class="fade-section relative py-28 sm:py-36">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-12 gap-16 lg:gap-20 items-start">
+        <div class="lg:col-span-4">
+          <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Capabilities</p>
+          <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6">
+            A versatile engine for genetic modulation
+          </h2>
+          <p class="text-warm-500 text-lg leading-relaxed">
+            Three core modalities, unified within a single platform architecture.
+          </p>
+        </div>
+
+        <div class="lg:col-span-8">
+          <!-- Merged border grid like Isomorphic -->
+          <div class="grid sm:grid-cols-2 gap-px bg-warm-200 rounded-2xl overflow-hidden">
+            <div class="bg-white p-8 sm:p-10">
+              <p class="text-brand-600 text-[11px] font-medium tracking-widest uppercase mb-5">Epigenetic Editing</p>
+              <h3 class="font-serif text-xl text-warm-900 mb-3">CRISPRi / Modulation</h3>
+              <p class="text-warm-500 text-sm leading-relaxed mb-5">Programmable, non-permanent control of gene expression without altering the underlying DNA sequence.</p>
+              <ul class="space-y-2.5 text-sm text-warm-600">
+                <li class="flex items-start gap-2.5">
+                  <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                  Multi-target silencing in one construct
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                  Tumor &amp; viral transcriptional reprogramming
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-8 sm:p-10">
+              <p class="text-brand-600 text-[11px] font-medium tracking-widest uppercase mb-5">Genome Editing</p>
+              <h3 class="font-serif text-xl text-warm-900 mb-3">Large Fragment Integration</h3>
+              <p class="text-warm-500 text-sm leading-relaxed mb-5">Efficient modification beyond single-base editing, supporting complex genetic corrections.</p>
+              <ul class="space-y-2.5 text-sm text-warm-600">
+                <li class="flex items-start gap-2.5">
+                  <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                  Large genetic insertions
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="mt-1.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                  Complex mutation correction
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-8 sm:p-10 sm:col-span-2">
+              <div class="grid sm:grid-cols-2 gap-8 items-start">
+                <div>
+                  <p class="text-brand-600 text-[11px] font-medium tracking-widest uppercase mb-5">Protein Replacement</p>
+                  <h3 class="font-serif text-xl text-warm-900 mb-3">In Vivo RNA Expression</h3>
+                  <p class="text-warm-500 text-sm leading-relaxed">Direct expression of functional proteins via high-expression IVT RNA constructs, enabling therapeutic protein delivery beyond the limits of AAV.</p>
+                </div>
+                <div class="pt-1">
+                  <!-- Placeholder for future illustration -->
+                  <div class="aspect-[4/3] rounded-xl bg-brand-50/60 border border-brand-100 flex items-center justify-center">
+                    <svg class="w-20 h-20 text-brand-200" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1">
+                      <circle cx="40" cy="40" r="25" stroke-dasharray="3 4" />
+                      <circle cx="40" cy="40" r="12" />
+                      <circle cx="40" cy="40" r="3" fill="currentColor" stroke="none" />
+                      <line x1="40" y1="15" x2="40" y2="7" />
+                      <line x1="40" y1="65" x2="40" y2="73" />
+                      <line x1="15" y1="40" x2="7" y2="40" />
+                      <line x1="65" y1="40" x2="73" y2="40" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALIDATION -->
+  <section class="fade-section relative py-28 sm:py-36 bg-warm-950 text-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div>
+          <p class="text-brand-300 text-xs font-medium tracking-widest uppercase mb-4">Validation</p>
+          <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight mb-6">
+            Engineered for real-world performance
+          </h2>
+          <p class="text-warm-400 text-lg leading-relaxed">
+            Our platform is built not only for innovation — but for translatability. Every component is designed with clinical development in mind.
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          <div class="flex items-start gap-6">
+            <div class="font-serif text-4xl text-brand-400 leading-none shrink-0 w-24">>9 kb</div>
+            <p class="text-warm-400 leading-relaxed">Successfully delivered large RNA constructs exceeding conventional payload limits</p>
+          </div>
+          <div class="h-px bg-white/10"></div>
+          <div class="flex items-start gap-6">
+            <div class="font-serif text-3xl text-brand-400 leading-none shrink-0 w-24 pt-0.5">Multi</div>
+            <p class="text-warm-400 leading-relaxed">Demonstrated coordinated multi-component expression from a single transcript</p>
+          </div>
+          <div class="h-px bg-white/10"></div>
+          <div class="flex items-start gap-6">
+            <div class="font-serif text-3xl text-brand-400 leading-none shrink-0 w-24 pt-0.5">LNP+</div>
+            <p class="text-warm-400 leading-relaxed">Enhanced delivery performance compared to conventional transfection systems</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATIONS -->
+  <section id="applications" class="fade-section relative py-28 sm:py-36">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="max-w-2xl mb-20">
+        <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Applications</p>
+        <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6">
+          Targeting diseases where simpler tools fail
+        </h2>
+        <p class="text-warm-500 text-lg leading-relaxed">
+          Designed for therapeutic challenges that cannot be solved with single-edit approaches.
+        </p>
+      </div>
+
+      <!-- Editorial list layout instead of cards -->
+      <div class="space-y-0 divide-y divide-warm-200">
+        <div class="grid md:grid-cols-12 gap-6 md:gap-12 py-12 first:pt-0 group">
+          <div class="md:col-span-1">
+            <div class="w-10 h-10 rounded-full bg-emerald-50 flex items-center justify-center">
+              <div class="w-2.5 h-2.5 rounded-full bg-emerald-500"></div>
+            </div>
+          </div>
+          <div class="md:col-span-4">
+            <h3 class="font-serif text-2xl text-warm-900 mb-2">Liver-Directed RNA Medicine</h3>
+            <p class="text-warm-500 leading-relaxed">Precision hepatic gene modulation for chronic conditions with high unmet need.</p>
+          </div>
+          <div class="md:col-span-7">
+            <div class="grid sm:grid-cols-3 gap-4 text-sm text-warm-600">
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Chronic viral diseases (HBV)</div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">High-burden protein deficiencies</div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Precision gene modulation</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-6 md:gap-12 py-12 group">
+          <div class="md:col-span-1">
+            <div class="w-10 h-10 rounded-full bg-violet-50 flex items-center justify-center">
+              <div class="w-2.5 h-2.5 rounded-full bg-violet-500"></div>
+            </div>
+          </div>
+          <div class="md:col-span-4">
+            <h3 class="font-serif text-2xl text-warm-900 mb-2">Complex Genetic Disorders</h3>
+            <p class="text-warm-500 leading-relaxed">Multi-component strategies for diseases beyond the reach of single-edit tools.</p>
+          </div>
+          <div class="md:col-span-7">
+            <div class="grid sm:grid-cols-3 gap-4 text-sm text-warm-600">
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Large gene insertion</div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Multi-component correction</div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Beyond base &amp; prime editing</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-6 md:gap-12 py-12 group">
+          <div class="md:col-span-1">
+            <div class="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center">
+              <div class="w-2.5 h-2.5 rounded-full bg-amber-500"></div>
+            </div>
+          </div>
+          <div class="md:col-span-4">
+            <h3 class="font-serif text-2xl text-warm-900 mb-2">Precision Oncology</h3>
+            <p class="text-warm-500 leading-relaxed">Epigenetic reprogramming and multi-target intervention in a single therapy.</p>
+          </div>
+          <div class="md:col-span-7">
+            <div class="grid sm:grid-cols-3 gap-4 text-sm text-warm-600">
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Tumor pathway reprogramming</div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Microenvironment modulation</div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Multi-target single therapy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERSHIP CTA -->
+  <section id="contact" class="fade-section relative py-28 sm:py-36 bg-brand-50/40">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div>
+          <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6">
+            Let's build the next generation of RNA medicine
+          </h2>
+          <p class="text-warm-500 text-lg leading-relaxed mb-10">
+            We collaborate with leading biopharma and research organizations to unlock new therapeutic possibilities — from multi-component genetic engineering to large payload delivery and strategies beyond conventional CRISPR.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="mailto:partnering@astralgen.tech" class="px-7 py-3.5 rounded-full bg-brand-600 text-white font-medium hover:bg-brand-700 transition-all hover:shadow-lg hover:shadow-brand-200">
+              Start a Collaboration
+            </a>
+            <a href="mailto:info@astralgen.tech" class="px-7 py-3.5 rounded-full border border-warm-300 text-warm-600 hover:border-warm-400 hover:text-warm-800 font-medium transition-all">
+              Request Deck
+            </a>
+          </div>
+        </div>
+
+        <!-- Decorative SVG — interconnected nodes -->
+        <div class="hidden lg:flex items-center justify-center">
+          <svg class="w-full max-w-sm" viewBox="0 0 300 300" fill="none">
+            <!-- Connection lines -->
+            <line x1="150" y1="60" x2="80" y2="150" stroke="#c3dbc9" stroke-width="1" />
+            <line x1="150" y1="60" x2="220" y2="150" stroke="#c3dbc9" stroke-width="1" />
+            <line x1="80" y1="150" x2="150" y2="240" stroke="#c3dbc9" stroke-width="1" />
+            <line x1="220" y1="150" x2="150" y2="240" stroke="#c3dbc9" stroke-width="1" />
+            <line x1="80" y1="150" x2="220" y2="150" stroke="#c3dbc9" stroke-width="1" />
+            <!-- Nodes -->
+            <circle cx="150" cy="60" r="24" fill="#f3f8f4" stroke="#9ac3a4" stroke-width="1.5" />
+            <circle cx="150" cy="60" r="6" fill="#4d7c5e" />
+            <circle cx="80" cy="150" r="20" fill="#f3f8f4" stroke="#9ac3a4" stroke-width="1.5" />
+            <circle cx="80" cy="150" r="5" fill="#4d7c5e" />
+            <circle cx="220" cy="150" r="20" fill="#f3f8f4" stroke="#9ac3a4" stroke-width="1.5" />
+            <circle cx="220" cy="150" r="5" fill="#4d7c5e" />
+            <circle cx="150" cy="240" r="28" fill="#f3f8f4" stroke="#4d7c5e" stroke-width="1.5" />
+            <circle cx="150" cy="240" r="8" fill="#4d7c5e" />
+            <!-- Labels -->
+            <text x="150" y="105" text-anchor="middle" fill="#7d7265" font-size="10" font-family="DM Sans">Encode</text>
+            <text x="45" y="190" text-anchor="middle" fill="#7d7265" font-size="10" font-family="DM Sans">Deliver</text>
+            <text x="255" y="190" text-anchor="middle" fill="#7d7265" font-size="10" font-family="DM Sans">Target</text>
+            <text x="150" y="282" text-anchor="middle" fill="#4d7c5e" font-size="11" font-weight="500" font-family="DM Sans">Therapeutic Action</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- COMPANY -->
-  <section id="company" class="relative py-24 sm:py-32 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="max-w-3xl mx-auto text-center">
-        <p class="text-brand-400 text-sm font-medium tracking-wide uppercase mb-3">Company</p>
-        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-6">Driven by Science. Built for Impact.</h2>
-        <p class="text-white/40 text-lg leading-relaxed">
-          Astral Genetics is advancing a new class of RNA therapeutics designed to address the most challenging diseases—where precision, scale, and coordination are essential. We combine innovative molecular design with next-generation delivery systems to transform genetic medicine from fragmented solutions into unified platforms.
+  <section id="company" class="fade-section relative py-28 sm:py-36">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="max-w-3xl">
+        <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Company</p>
+        <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-8">
+          Driven by science.<br />Built for impact.
+        </h2>
+        <p class="text-warm-500 text-xl leading-relaxed">
+          Astral Genetics is advancing a new class of RNA therapeutics designed to address the most challenging diseases — where precision, scale, and coordination are essential. We combine innovative molecular design with next-generation delivery systems to transform genetic medicine from fragmented solutions into unified platforms.
         </p>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="border-t border-white/5 py-12">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="flex items-center gap-2.5">
-          <div class="w-7 h-7 rounded-md bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-xs font-bold">AG</div>
-          <span class="text-sm font-semibold tracking-wide uppercase text-white/60">Astral Genetics</span>
+  <footer class="border-t border-warm-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="py-16 grid md:grid-cols-3 gap-10 items-start">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-sm font-semibold text-white">AG</div>
+            <span class="text-sm font-medium tracking-wider uppercase text-warm-700">Astral Genetics</span>
+          </div>
+          <p class="text-warm-400 text-sm leading-relaxed max-w-xs">Redefining the future of RNA medicine through unified platform design.</p>
         </div>
 
-        <p class="text-white/20 text-sm text-center">Redefining the Future of RNA Medicine</p>
+        <div class="flex flex-col gap-3 text-sm text-warm-500">
+          <a href="#platform" class="hover:text-warm-800 transition-colors">Platform</a>
+          <a href="#capabilities" class="hover:text-warm-800 transition-colors">Science</a>
+          <a href="#applications" class="hover:text-warm-800 transition-colors">Applications</a>
+          <a href="#company" class="hover:text-warm-800 transition-colors">Company</a>
+        </div>
 
-        <div class="flex items-center gap-6 text-sm text-white/30">
-          <a href="#" class="hover:text-white/60 transition-colors">Privacy</a>
-          <a href="#" class="hover:text-white/60 transition-colors">Terms</a>
-          <a href="#" class="hover:text-white/60 transition-colors">LinkedIn</a>
+        <div>
+          <p class="text-xs font-medium tracking-widest uppercase text-warm-400 mb-3">Contact</p>
+          <div class="flex flex-col gap-2 text-sm text-warm-500">
+            <a href="mailto:info@astralgen.tech" class="hover:text-warm-800 transition-colors">info@astralgen.tech</a>
+            <a href="mailto:partnering@astralgen.tech" class="hover:text-warm-800 transition-colors">partnering@astralgen.tech</a>
+          </div>
         </div>
       </div>
 
-      <div class="mt-8 pt-6 border-t border-white/5 text-center">
-        <p class="text-white/15 text-xs">&copy; 2026 Astral Genetics. All Rights Reserved.</p>
+      <div class="py-6 border-t border-warm-200">
+        <p class="text-warm-400 text-xs">&copy; 2026 Astral Genetics. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
 </Layout>
 
 <script>
+  // Mobile menu
   const toggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('mobile-menu');
   toggle?.addEventListener('click', () => menu?.classList.toggle('hidden'));
-  // Close mobile menu on link click
   menu?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => menu?.classList.add('hidden'));
   });
+
+  // Scroll-triggered fade-in
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  document.querySelectorAll('.fade-section').forEach((el) => observer.observe(el));
 </script>
