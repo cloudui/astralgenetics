@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Astral Genetics — RNA All-in-One Platform">
@@ -8,38 +8,84 @@ import Layout from '../layouts/Layout.astro';
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="h-20 flex items-center justify-between">
         <a href="/" class="flex items-center gap-3 group">
-          <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-sm font-semibold text-white">AG</div>
-          <span class="text-sm font-medium tracking-wider uppercase text-warm-700">Astral Genetics</span>
+          <div
+            class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-sm font-semibold text-white"
+          >
+            AG
+          </div>
+          <span
+            class="text-sm font-medium tracking-wider uppercase text-warm-700"
+            >Astral Genetics</span
+          >
         </a>
-        <div class="hidden md:flex items-center gap-10 text-[13px] tracking-wide text-warm-500">
-          <a href="#platform" class="hover:text-warm-900 transition-colors">Platform</a>
-          <a href="#capabilities" class="hover:text-warm-900 transition-colors">Science</a>
-          <a href="#applications" class="hover:text-warm-900 transition-colors">Applications</a>
-          <a href="#company" class="hover:text-warm-900 transition-colors">Company</a>
-          <a href="#contact" class="ml-2 px-5 py-2 rounded-full bg-brand-600 text-white hover:bg-brand-700 transition-colors">Partner With Us</a>
+        <div
+          class="hidden md:flex items-center gap-10 text-[13px] tracking-wide text-warm-500"
+        >
+          <a href="#platform" class="hover:text-warm-900 transition-colors"
+            >Platform</a
+          >
+          <a href="#capabilities" class="hover:text-warm-900 transition-colors"
+            >Science</a
+          >
+          <a href="#applications" class="hover:text-warm-900 transition-colors"
+            >Applications</a
+          >
+          <a href="#company" class="hover:text-warm-900 transition-colors"
+            >Company</a
+          >
+          <a
+            href="#contact"
+            class="ml-2 px-5 py-2 rounded-full bg-brand-600 text-white hover:bg-brand-700 transition-colors"
+            >Partner With Us</a
+          >
         </div>
-        <button id="menu-toggle" class="md:hidden text-warm-600 hover:text-warm-900" aria-label="Menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+        <button
+          id="menu-toggle"
+          class="md:hidden text-warm-600 hover:text-warm-900"
+          aria-label="Menu"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-warm-200 bg-warm-50/95 backdrop-blur-xl">
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden border-t border-warm-200 bg-warm-50/95 backdrop-blur-xl"
+    >
       <div class="px-6 py-5 flex flex-col gap-4 text-sm text-warm-600">
         <a href="#platform" class="hover:text-warm-900">Platform</a>
         <a href="#capabilities" class="hover:text-warm-900">Science</a>
         <a href="#applications" class="hover:text-warm-900">Applications</a>
         <a href="#company" class="hover:text-warm-900">Company</a>
-        <a href="#contact" class="mt-2 text-center px-5 py-2.5 rounded-full bg-brand-600 text-white">Partner With Us</a>
+        <a
+          href="#contact"
+          class="mt-2 text-center px-5 py-2.5 rounded-full bg-brand-600 text-white"
+          >Partner With Us</a
+        >
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="relative min-h-screen flex items-end overflow-hidden pb-24 pt-32 lg:pt-0 lg:items-center">
+  <section
+    class="relative min-h-screen flex items-end overflow-hidden pb-24 pt-32 lg:pt-0 lg:items-center"
+  >
     <!-- Background with star field -->
-    <div class="absolute inset-0 bg-gradient-to-br from-brand-100/50 via-brand-50/30 to-warm-100/40"></div>
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-brand-100/50 via-brand-50/30 to-warm-100/40"
+    >
+    </div>
     <!-- Stars -->
     <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
       <div class="star sm" style="top:8%;left:12%;"></div>
@@ -63,23 +109,38 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <!-- Left: text -->
         <div>
-          <p class="text-brand-600 text-sm font-medium tracking-widest uppercase mb-6">RNA Therapeutics Platform</p>
+          <p
+            class="text-brand-600 text-sm font-medium tracking-widest uppercase mb-6"
+          >
+            RNA Therapeutics Platform
+          </p>
 
-          <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-warm-950 mb-8">
+          <h1
+            class="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-warm-950 mb-8"
+          >
             One RNA.<br />
             Multiple functions.<br />
             <em class="text-brand-600">Real medicine.</em>
           </h1>
 
           <p class="text-lg text-warm-700 max-w-lg leading-relaxed mb-10">
-            A proprietary platform that integrates multiple gene editing and regulatory components into a single, deliverable RNA molecule — paired with large-fragment delivery systems engineered to overcome the limits of conventional genetic medicine.
+            A proprietary platform that integrates multiple gene editing and
+            regulatory components into a single, deliverable RNA molecule —
+            paired with large-fragment delivery systems engineered to overcome
+            the limits of conventional genetic medicine.
           </p>
 
           <div class="flex flex-wrap gap-4">
-            <a href="#platform" class="px-7 py-3.5 rounded-full bg-brand-600 text-white font-medium hover:bg-brand-700 transition-all hover:shadow-lg hover:shadow-brand-200">
+            <a
+              href="#platform"
+              class="px-7 py-3.5 rounded-full bg-brand-600 text-white font-medium hover:bg-brand-700 transition-all hover:shadow-lg hover:shadow-brand-200"
+            >
               Explore Platform
             </a>
-            <a href="#capabilities" class="px-7 py-3.5 rounded-full border border-warm-300 text-warm-600 hover:border-warm-400 hover:text-warm-800 font-medium transition-all">
+            <a
+              href="#capabilities"
+              class="px-7 py-3.5 rounded-full border border-warm-300 text-warm-600 hover:border-warm-400 hover:text-warm-800 font-medium transition-all"
+            >
               View Science
             </a>
           </div>
@@ -89,108 +150,434 @@ import Layout from '../layouts/Layout.astro';
         <div class="hidden lg:flex items-center justify-center">
           <div class="relative w-full max-w-md aspect-square">
             <!-- Soft nebula glow -->
-            <div class="absolute inset-8 bg-brand-200/30 rounded-full blur-[80px]"></div>
-            <div class="absolute top-12 right-8 w-40 h-40 bg-brand-100/40 rounded-full blur-[50px]"></div>
+            <div
+              class="absolute inset-8 bg-brand-200/30 rounded-full blur-[80px]"
+            >
+            </div>
+            <div
+              class="absolute top-12 right-8 w-40 h-40 bg-brand-100/40 rounded-full blur-[50px]"
+            >
+            </div>
 
-            <svg class="relative w-full h-full" viewBox="0 0 400 400" fill="none">
+            <svg
+              class="relative w-full h-full"
+              viewBox="0 0 400 400"
+              fill="none"
+            >
               <defs>
                 <linearGradient id="helix1" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="currentColor" stop-opacity="0.2" class="text-brand-400" />
-                  <stop offset="50%" stop-color="currentColor" stop-opacity="0.7" class="text-brand-600" />
-                  <stop offset="100%" stop-color="currentColor" stop-opacity="0.2" class="text-brand-400" />
+                  <stop
+                    offset="0%"
+                    stop-color="currentColor"
+                    stop-opacity="0.2"
+                    class="text-brand-400"></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="currentColor"
+                    stop-opacity="0.7"
+                    class="text-brand-600"></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="currentColor"
+                    stop-opacity="0.2"
+                    class="text-brand-400"></stop>
                 </linearGradient>
                 <linearGradient id="helix2" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="currentColor" stop-opacity="0.15" class="text-brand-300" />
-                  <stop offset="50%" stop-color="currentColor" stop-opacity="0.5" class="text-brand-500" />
-                  <stop offset="100%" stop-color="currentColor" stop-opacity="0.15" class="text-brand-300" />
+                  <stop
+                    offset="0%"
+                    stop-color="currentColor"
+                    stop-opacity="0.15"
+                    class="text-brand-300"></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="currentColor"
+                    stop-opacity="0.5"
+                    class="text-brand-500"></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="currentColor"
+                    stop-opacity="0.15"
+                    class="text-brand-300"></stop>
                 </linearGradient>
                 <radialGradient id="starglow">
-                  <stop offset="0%" stop-color="currentColor" stop-opacity="0.6" class="text-brand-300" />
-                  <stop offset="100%" stop-color="currentColor" stop-opacity="0" class="text-brand-300" />
+                  <stop
+                    offset="0%"
+                    stop-color="currentColor"
+                    stop-opacity="0.6"
+                    class="text-brand-300"></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="currentColor"
+                    stop-opacity="0"
+                    class="text-brand-300"></stop>
                 </radialGradient>
               </defs>
 
               <!-- Constellation lines (connecting stars around the helix) -->
               <g class="text-brand-300" opacity="0.3">
-                <line x1="60" y1="55" x2="120" y2="90" stroke="currentColor" stroke-width="0.5" />
-                <line x1="120" y1="90" x2="85" y2="160" stroke="currentColor" stroke-width="0.5" />
-                <line x1="330" y1="80" x2="290" y2="140" stroke="currentColor" stroke-width="0.5" />
-                <line x1="290" y1="140" x2="340" y2="200" stroke="currentColor" stroke-width="0.5" />
-                <line x1="340" y1="200" x2="310" y2="280" stroke="currentColor" stroke-width="0.5" />
-                <line x1="70" y1="300" x2="110" y2="250" stroke="currentColor" stroke-width="0.5" />
-                <line x1="110" y1="250" x2="85" y2="160" stroke="currentColor" stroke-width="0.5" />
-                <line x1="310" y1="280" x2="340" y2="340" stroke="currentColor" stroke-width="0.5" />
-                <line x1="60" y1="55" x2="50" y2="120" stroke="currentColor" stroke-width="0.5" />
-                <line x1="50" y1="120" x2="85" y2="160" stroke="currentColor" stroke-width="0.5" />
+                <line
+                  x1="60"
+                  y1="55"
+                  x2="120"
+                  y2="90"
+                  stroke="currentColor"
+                  stroke-width="0.5"></line>
+                <line
+                  x1="120"
+                  y1="90"
+                  x2="85"
+                  y2="160"
+                  stroke="currentColor"
+                  stroke-width="0.5"></line>
+                <line
+                  x1="330"
+                  y1="80"
+                  x2="290"
+                  y2="140"
+                  stroke="currentColor"
+                  stroke-width="0.5"></line>
+                <line
+                  x1="290"
+                  y1="140"
+                  x2="340"
+                  y2="200"
+                  stroke="currentColor"
+                  stroke-width="0.5"></line>
+                <line
+                  x1="340"
+                  y1="200"
+                  x2="310"
+                  y2="280"
+                  stroke="currentColor"
+                  stroke-width="0.5"></line>
+                <line
+                  x1="70"
+                  y1="300"
+                  x2="110"
+                  y2="250"
+                  stroke="currentColor"
+                  stroke-width="0.5"></line>
+                <line
+                  x1="110"
+                  y1="250"
+                  x2="85"
+                  y2="160"
+                  stroke="currentColor"
+                  stroke-width="0.5"></line>
+                <line
+                  x1="310"
+                  y1="280"
+                  x2="340"
+                  y2="340"
+                  stroke="currentColor"
+                  stroke-width="0.5"></line>
+                <line
+                  x1="60"
+                  y1="55"
+                  x2="50"
+                  y2="120"
+                  stroke="currentColor"
+                  stroke-width="0.5"></line>
+                <line
+                  x1="50"
+                  y1="120"
+                  x2="85"
+                  y2="160"
+                  stroke="currentColor"
+                  stroke-width="0.5"></line>
               </g>
 
               <!-- Constellation star points -->
               <g class="text-brand-500">
-                <circle cx="60" cy="55" r="2" fill="currentColor" opacity="0.5" />
-                <circle cx="120" cy="90" r="1.5" fill="currentColor" opacity="0.4" />
-                <circle cx="85" cy="160" r="2" fill="currentColor" opacity="0.5" />
-                <circle cx="330" cy="80" r="1.5" fill="currentColor" opacity="0.4" />
-                <circle cx="290" cy="140" r="2" fill="currentColor" opacity="0.5" />
-                <circle cx="340" cy="200" r="1.5" fill="currentColor" opacity="0.4" />
-                <circle cx="310" cy="280" r="2" fill="currentColor" opacity="0.5" />
-                <circle cx="340" cy="340" r="1.5" fill="currentColor" opacity="0.3" />
-                <circle cx="70" cy="300" r="1.5" fill="currentColor" opacity="0.4" />
-                <circle cx="110" cy="250" r="2" fill="currentColor" opacity="0.5" />
-                <circle cx="50" cy="120" r="1.5" fill="currentColor" opacity="0.3" />
+                <circle cx="60" cy="55" r="2" fill="currentColor" opacity="0.5"
+                ></circle>
+                <circle
+                  cx="120"
+                  cy="90"
+                  r="1.5"
+                  fill="currentColor"
+                  opacity="0.4"></circle>
+                <circle cx="85" cy="160" r="2" fill="currentColor" opacity="0.5"
+                ></circle>
+                <circle
+                  cx="330"
+                  cy="80"
+                  r="1.5"
+                  fill="currentColor"
+                  opacity="0.4"></circle>
+                <circle
+                  cx="290"
+                  cy="140"
+                  r="2"
+                  fill="currentColor"
+                  opacity="0.5"></circle>
+                <circle
+                  cx="340"
+                  cy="200"
+                  r="1.5"
+                  fill="currentColor"
+                  opacity="0.4"></circle>
+                <circle
+                  cx="310"
+                  cy="280"
+                  r="2"
+                  fill="currentColor"
+                  opacity="0.5"></circle>
+                <circle
+                  cx="340"
+                  cy="340"
+                  r="1.5"
+                  fill="currentColor"
+                  opacity="0.3"></circle>
+                <circle
+                  cx="70"
+                  cy="300"
+                  r="1.5"
+                  fill="currentColor"
+                  opacity="0.4"></circle>
+                <circle
+                  cx="110"
+                  cy="250"
+                  r="2"
+                  fill="currentColor"
+                  opacity="0.5"></circle>
+                <circle
+                  cx="50"
+                  cy="120"
+                  r="1.5"
+                  fill="currentColor"
+                  opacity="0.3"></circle>
               </g>
 
               <!-- Star glows (larger faint circles behind key stars) -->
-              <circle cx="60" cy="55" r="8" fill="url(#starglow)" />
-              <circle cx="290" cy="140" r="10" fill="url(#starglow)" />
-              <circle cx="110" cy="250" r="8" fill="url(#starglow)" />
+              <circle cx="60" cy="55" r="8" fill="url(#starglow)"></circle>
+              <circle cx="290" cy="140" r="10" fill="url(#starglow)"></circle>
+              <circle cx="110" cy="250" r="8" fill="url(#starglow)"></circle>
 
               <!-- Orbital rings around helix -->
-              <ellipse cx="200" cy="200" rx="175" ry="60" stroke="currentColor" stroke-width="0.5" opacity="0.12" class="text-brand-400" transform="rotate(-20 200 200)" />
-              <ellipse cx="200" cy="200" rx="160" ry="50" stroke="currentColor" stroke-width="0.5" opacity="0.08" class="text-brand-400" transform="rotate(15 200 200)" stroke-dasharray="3 5" />
+              <ellipse
+                cx="200"
+                cy="200"
+                rx="175"
+                ry="60"
+                stroke="currentColor"
+                stroke-width="0.5"
+                opacity="0.12"
+                class="text-brand-400"
+                transform="rotate(-20 200 200)"></ellipse>
+              <ellipse
+                cx="200"
+                cy="200"
+                rx="160"
+                ry="50"
+                stroke="currentColor"
+                stroke-width="0.5"
+                opacity="0.08"
+                class="text-brand-400"
+                transform="rotate(15 200 200)"
+                stroke-dasharray="3 5"></ellipse>
 
               <!-- Central helix strands -->
-              <path d="M170,50 Q265,95 170,150 Q75,205 170,260 Q265,315 170,370" stroke="url(#helix1)" stroke-width="2" fill="none" />
-              <path d="M230,50 Q135,95 230,150 Q325,205 230,260 Q135,315 230,370" stroke="url(#helix2)" stroke-width="2" fill="none" />
+              <path
+                d="M170,50 Q265,95 170,150 Q75,205 170,260 Q265,315 170,370"
+                stroke="url(#helix1)"
+                stroke-width="2"
+                fill="none"></path>
+              <path
+                d="M230,50 Q135,95 230,150 Q325,205 230,260 Q135,315 230,370"
+                stroke="url(#helix2)"
+                stroke-width="2"
+                fill="none"></path>
 
               <!-- Base pair rungs -->
               <g class="text-brand-300" opacity="0.4">
-                <line x1="182" y1="68" x2="218" y2="68" stroke="currentColor" stroke-width="1" />
-                <line x1="160" y1="115" x2="240" y2="115" stroke="currentColor" stroke-width="1" />
-                <line x1="178" y1="162" x2="222" y2="162" stroke="currentColor" stroke-width="1" />
-                <line x1="160" y1="210" x2="240" y2="210" stroke="currentColor" stroke-width="1" />
-                <line x1="182" y1="258" x2="218" y2="258" stroke="currentColor" stroke-width="1" />
-                <line x1="160" y1="305" x2="240" y2="305" stroke="currentColor" stroke-width="1" />
-                <line x1="182" y1="350" x2="218" y2="350" stroke="currentColor" stroke-width="1" />
+                <line
+                  x1="182"
+                  y1="68"
+                  x2="218"
+                  y2="68"
+                  stroke="currentColor"
+                  stroke-width="1"></line>
+                <line
+                  x1="160"
+                  y1="115"
+                  x2="240"
+                  y2="115"
+                  stroke="currentColor"
+                  stroke-width="1"></line>
+                <line
+                  x1="178"
+                  y1="162"
+                  x2="222"
+                  y2="162"
+                  stroke="currentColor"
+                  stroke-width="1"></line>
+                <line
+                  x1="160"
+                  y1="210"
+                  x2="240"
+                  y2="210"
+                  stroke="currentColor"
+                  stroke-width="1"></line>
+                <line
+                  x1="182"
+                  y1="258"
+                  x2="218"
+                  y2="258"
+                  stroke="currentColor"
+                  stroke-width="1"></line>
+                <line
+                  x1="160"
+                  y1="305"
+                  x2="240"
+                  y2="305"
+                  stroke="currentColor"
+                  stroke-width="1"></line>
+                <line
+                  x1="182"
+                  y1="350"
+                  x2="218"
+                  y2="350"
+                  stroke="currentColor"
+                  stroke-width="1"></line>
               </g>
 
               <!-- Functional module nodes on helix -->
-              <circle cx="170" cy="150" r="16" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5" class="text-brand-500" />
-              <circle cx="170" cy="150" r="4" fill="currentColor" opacity="0.6" class="text-brand-600" />
+              <circle
+                cx="170"
+                cy="150"
+                r="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                opacity="0.5"
+                class="text-brand-500"></circle>
+              <circle
+                cx="170"
+                cy="150"
+                r="4"
+                fill="currentColor"
+                opacity="0.6"
+                class="text-brand-600"></circle>
 
-              <circle cx="230" cy="210" r="20" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5" class="text-brand-500" />
-              <circle cx="230" cy="210" r="5" fill="currentColor" opacity="0.6" class="text-brand-600" />
+              <circle
+                cx="230"
+                cy="210"
+                r="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                opacity="0.5"
+                class="text-brand-500"></circle>
+              <circle
+                cx="230"
+                cy="210"
+                r="5"
+                fill="currentColor"
+                opacity="0.6"
+                class="text-brand-600"></circle>
 
-              <circle cx="170" cy="260" r="14" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5" class="text-brand-500" />
-              <circle cx="170" cy="260" r="3.5" fill="currentColor" opacity="0.6" class="text-brand-600" />
+              <circle
+                cx="170"
+                cy="260"
+                r="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                opacity="0.5"
+                class="text-brand-500"></circle>
+              <circle
+                cx="170"
+                cy="260"
+                r="3.5"
+                fill="currentColor"
+                opacity="0.6"
+                class="text-brand-600"></circle>
 
               <!-- Twinkling particles drifting slowly -->
-              <circle cx="320" cy="120" r="1.5" fill="currentColor" opacity="0.4" class="text-brand-400">
-                <animate attributeName="opacity" values="0.4;0.15;0.4" dur="4s" repeatCount="indefinite" />
+              <circle
+                cx="320"
+                cy="120"
+                r="1.5"
+                fill="currentColor"
+                opacity="0.4"
+                class="text-brand-400"
+              >
+                <animate
+                  attributeName="opacity"
+                  values="0.4;0.15;0.4"
+                  dur="4s"
+                  repeatCount="indefinite"></animate>
               </circle>
-              <circle cx="80" cy="280" r="1" fill="currentColor" opacity="0.3" class="text-brand-400">
-                <animate attributeName="opacity" values="0.3;0.1;0.3" dur="5s" repeatCount="indefinite" />
+              <circle
+                cx="80"
+                cy="280"
+                r="1"
+                fill="currentColor"
+                opacity="0.3"
+                class="text-brand-400"
+              >
+                <animate
+                  attributeName="opacity"
+                  values="0.3;0.1;0.3"
+                  dur="5s"
+                  repeatCount="indefinite"></animate>
               </circle>
-              <circle cx="350" cy="310" r="1.5" fill="currentColor" opacity="0.3" class="text-brand-300">
-                <animate attributeName="opacity" values="0.3;0.1;0.3" dur="6s" repeatCount="indefinite" />
+              <circle
+                cx="350"
+                cy="310"
+                r="1.5"
+                fill="currentColor"
+                opacity="0.3"
+                class="text-brand-300"
+              >
+                <animate
+                  attributeName="opacity"
+                  values="0.3;0.1;0.3"
+                  dur="6s"
+                  repeatCount="indefinite"></animate>
               </circle>
-              <circle cx="55" cy="90" r="1" fill="currentColor" opacity="0.25" class="text-brand-400">
-                <animate attributeName="opacity" values="0.25;0.08;0.25" dur="3.5s" repeatCount="indefinite" />
+              <circle
+                cx="55"
+                cy="90"
+                r="1"
+                fill="currentColor"
+                opacity="0.25"
+                class="text-brand-400"
+              >
+                <animate
+                  attributeName="opacity"
+                  values="0.25;0.08;0.25"
+                  dur="3.5s"
+                  repeatCount="indefinite"></animate>
               </circle>
-              <circle cx="200" cy="30" r="1" fill="currentColor" opacity="0.3" class="text-brand-400">
-                <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4.5s" repeatCount="indefinite" />
+              <circle
+                cx="200"
+                cy="30"
+                r="1"
+                fill="currentColor"
+                opacity="0.3"
+                class="text-brand-400"
+              >
+                <animate
+                  attributeName="opacity"
+                  values="0.3;0.1;0.3"
+                  dur="4.5s"
+                  repeatCount="indefinite"></animate>
               </circle>
-              <circle cx="200" cy="380" r="1" fill="currentColor" opacity="0.2" class="text-brand-400">
-                <animate attributeName="opacity" values="0.2;0.05;0.2" dur="5.5s" repeatCount="indefinite" />
+              <circle
+                cx="200"
+                cy="380"
+                r="1"
+                fill="currentColor"
+                opacity="0.2"
+                class="text-brand-400"
+              >
+                <animate
+                  attributeName="opacity"
+                  values="0.2;0.05;0.2"
+                  dur="5.5s"
+                  repeatCount="indefinite"></animate>
               </circle>
             </svg>
           </div>
@@ -200,44 +587,79 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- DIVIDER -->
-  <div class="max-w-7xl mx-auto px-6 lg:px-10"><div class="h-px bg-warm-200"></div></div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="h-px bg-warm-200"></div>
+  </div>
 
   <!-- PLATFORM OVERVIEW -->
   <section id="platform" class="fade-section relative py-28 sm:py-36">
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="grid lg:grid-cols-12 gap-16 lg:gap-20">
         <div class="lg:col-span-5">
-          <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Platform</p>
-          <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6">
+          <p
+            class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4"
+          >
+            Platform
+          </p>
+          <h2
+            class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6"
+          >
             A new architecture for genetic medicine
           </h2>
           <p class="text-warm-700 text-lg leading-relaxed">
-            Traditional approaches fragment complexity across multiple delivery vectors and editing systems. Our platform unifies them into a single molecule.
+            Traditional approaches fragment complexity across multiple delivery
+            vectors and editing systems. Our platform unifies them into a single
+            molecule.
           </p>
         </div>
 
         <div class="lg:col-span-7 space-y-8">
-          <div class="relative border border-warm-200 rounded-2xl bg-white p-8 sm:p-10">
+          <div
+            class="relative border border-warm-200 rounded-2xl bg-white p-8 sm:p-10"
+          >
             <div class="flex items-start gap-6">
-              <div class="shrink-0 w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center">
-                <svg class="w-7 h-7 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+              <div
+                class="shrink-0 w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-brand-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"
+                  ></path>
                 </svg>
               </div>
               <div class="flex-1">
-                <h3 class="font-serif text-2xl text-warm-900 mb-3">RNA All-in-One</h3>
-                <p class="text-warm-600 leading-relaxed mb-5">A single IVT RNA encoding all required functional components for coordinated therapeutic action.</p>
+                <h3 class="font-serif text-2xl text-warm-900 mb-3">
+                  RNA All-in-One
+                </h3>
+                <p class="text-warm-600 leading-relaxed mb-5">
+                  A single IVT RNA encoding all required functional components
+                  for coordinated therapeutic action.
+                </p>
                 <div class="grid sm:grid-cols-3 gap-4 text-sm text-warm-600">
                   <div class="flex items-start gap-2">
-                    <span class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    <span
+                      class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"
+                    ></span>
                     Multi-component integration in one transcript
                   </div>
                   <div class="flex items-start gap-2">
-                    <span class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    <span
+                      class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"
+                    ></span>
                     Synchronized intracellular release
                   </div>
                   <div class="flex items-start gap-2">
-                    <span class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    <span
+                      class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"
+                    ></span>
                     Reduced variability
                   </div>
                 </div>
@@ -245,27 +667,52 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
 
-          <div class="relative border border-warm-200 rounded-2xl bg-white p-8 sm:p-10">
+          <div
+            class="relative border border-warm-200 rounded-2xl bg-white p-8 sm:p-10"
+          >
             <div class="flex items-start gap-6">
-              <div class="shrink-0 w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center">
-                <svg class="w-7 h-7 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+              <div
+                class="shrink-0 w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-brand-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+                  ></path>
                 </svg>
               </div>
               <div class="flex-1">
-                <h3 class="font-serif text-2xl text-warm-900 mb-3">Large-Payload LNP Engine</h3>
-                <p class="text-warm-600 leading-relaxed mb-5">A delivery system purpose-built for next-generation RNA therapeutics.</p>
+                <h3 class="font-serif text-2xl text-warm-900 mb-3">
+                  Large-Payload LNP Engine
+                </h3>
+                <p class="text-warm-600 leading-relaxed mb-5">
+                  A delivery system purpose-built for next-generation RNA
+                  therapeutics.
+                </p>
                 <div class="grid sm:grid-cols-3 gap-4 text-sm text-warm-600">
                   <div class="flex items-start gap-2">
-                    <span class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    <span
+                      class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"
+                    ></span>
                     Large RNA payloads (9kb+)
                   </div>
                   <div class="flex items-start gap-2">
-                    <span class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    <span
+                      class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"
+                    ></span>
                     Hepatic targeting &amp; systemic delivery
                   </div>
                   <div class="flex items-start gap-2">
-                    <span class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                    <span
+                      class="mt-2.5 w-1 h-1 rounded-full bg-brand-400 shrink-0"
+                    ></span>
                     Scalable for clinical translation
                   </div>
                 </div>
@@ -278,7 +725,9 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- HOW IT WORKS -->
-  <section class="fade-section relative py-28 sm:py-36 bg-brand-50/40 overflow-hidden">
+  <section
+    class="fade-section relative py-28 sm:py-36 bg-brand-50/40 overflow-hidden"
+  >
     <!-- Stars and small planet -->
     <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
       <div class="star sm" style="top:15%;left:5%;"></div>
@@ -289,30 +738,47 @@ import Layout from '../layouts/Layout.astro';
       <div class="star sm" style="top:55%;left:3%;"></div>
       <div class="star" style="top:10%;left:60%;"></div>
       <div class="star sm" style="top:90%;left:75%;"></div>
-
     </div>
 
     <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
-      <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Process</p>
-      <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-20">
+      <p
+        class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4"
+      >
+        Process
+      </p>
+      <h2
+        class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-20"
+      >
         From design to execution
       </h2>
 
-      <div class="grid md:grid-cols-3 gap-px bg-warm-200 rounded-2xl overflow-hidden">
+      <div
+        class="grid md:grid-cols-3 gap-px bg-warm-200 rounded-2xl overflow-hidden"
+      >
         <div class="bg-white p-10 sm:p-12">
           <div class="font-serif text-6xl text-brand-200 mb-6">1</div>
           <h3 class="font-serif text-2xl text-warm-900 mb-3">Encode</h3>
-          <p class="text-warm-600 leading-relaxed">Multiple functional elements are designed within a single RNA construct, enabling coordinated multi-component activity from one molecule.</p>
+          <p class="text-warm-600 leading-relaxed">
+            Multiple functional elements are designed within a single RNA
+            construct, enabling coordinated multi-component activity from one
+            molecule.
+          </p>
         </div>
         <div class="bg-white p-10 sm:p-12">
           <div class="font-serif text-6xl text-brand-200 mb-6">2</div>
           <h3 class="font-serif text-2xl text-warm-900 mb-3">Deliver</h3>
-          <p class="text-warm-600 leading-relaxed">Proprietary LNP systems transport large RNA payloads into target tissues with high efficiency and cell-type specificity.</p>
+          <p class="text-warm-600 leading-relaxed">
+            Proprietary LNP systems transport large RNA payloads into target
+            tissues with high efficiency and cell-type specificity.
+          </p>
         </div>
         <div class="bg-white p-10 sm:p-12">
           <div class="font-serif text-6xl text-brand-200 mb-6">3</div>
           <h3 class="font-serif text-2xl text-warm-900 mb-3">Execute</h3>
-          <p class="text-warm-600 leading-relaxed">Intracellular processing releases independent modules, enabling coordinated biological function from a single delivery event.</p>
+          <p class="text-warm-600 leading-relaxed">
+            Intracellular processing releases independent modules, enabling
+            coordinated biological function from a single delivery event.
+          </p>
         </div>
       </div>
     </div>
@@ -323,48 +789,81 @@ import Layout from '../layouts/Layout.astro';
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="grid lg:grid-cols-12 gap-16 lg:gap-20 items-start">
         <div class="lg:col-span-4">
-          <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Capabilities</p>
-          <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6">
+          <p
+            class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4"
+          >
+            Capabilities
+          </p>
+          <h2
+            class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6"
+          >
             A versatile engine for genetic modulation
           </h2>
           <p class="text-warm-700 text-lg leading-relaxed">
-            Three core modalities, unified within a single platform architecture.
+            Three core modalities, unified within a single platform
+            architecture.
           </p>
         </div>
 
         <div class="lg:col-span-8">
-          <div class="grid sm:grid-cols-2 gap-px bg-warm-200 rounded-2xl overflow-hidden">
+          <div
+            class="grid sm:grid-cols-2 gap-px bg-warm-200 rounded-2xl overflow-hidden"
+          >
             <div class="bg-white p-8 sm:p-10">
-              <p class="text-brand-600 text-[11px] font-medium tracking-widest uppercase mb-5">Epigenetic Editing</p>
-              <h3 class="font-serif text-xl text-warm-900 mb-3">CRISPRi / Modulation</h3>
-              <p class="text-warm-600 text-sm leading-relaxed mb-5">Programmable, non-permanent control of gene expression without altering the underlying DNA sequence.</p>
+              <p
+                class="text-brand-600 text-[11px] font-medium tracking-widest uppercase mb-5"
+              >
+                Epigenetic Editing
+              </p>
+              <h3 class="font-serif text-xl text-warm-900 mb-3">
+                CRISPRi / Modulation
+              </h3>
+              <p class="text-warm-600 text-sm leading-relaxed mb-5">
+                Programmable, non-permanent control of gene expression without
+                altering the underlying DNA sequence.
+              </p>
               <ul class="space-y-2 text-sm text-warm-600">
                 <li class="flex items-start gap-2.5">
-                  <span class="mt-2 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                  <span class="mt-2 w-1 h-1 rounded-full bg-brand-400 shrink-0"
+                  ></span>
                   Multi-target silencing in one construct
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="mt-2 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                  <span class="mt-2 w-1 h-1 rounded-full bg-brand-400 shrink-0"
+                  ></span>
                   Tumor &amp; viral transcriptional reprogramming
                 </li>
               </ul>
             </div>
 
             <div class="bg-white p-8 sm:p-10">
-              <p class="text-brand-600 text-[11px] font-medium tracking-widest uppercase mb-5">Genome Editing</p>
-              <h3 class="font-serif text-xl text-warm-900 mb-3">Targeted Gene Integration</h3>
-              <p class="text-warm-600 text-sm leading-relaxed mb-5">Approaches toward sequence integration beyond single-base editing, with a focus on defined genomic loci relevant to cell engineering.</p>
+              <p
+                class="text-brand-600 text-[11px] font-medium tracking-widest uppercase mb-5"
+              >
+                Genome Editing
+              </p>
+              <h3 class="font-serif text-xl text-warm-900 mb-3">
+                Targeted Gene Integration
+              </h3>
+              <p class="text-warm-600 text-sm leading-relaxed mb-5">
+                Approaches toward sequence integration beyond single-base
+                editing, with a focus on defined genomic loci relevant to cell
+                engineering.
+              </p>
               <ul class="space-y-2.5 text-sm text-warm-600">
                 <li class="flex items-start gap-2.5">
-                  <span class="mt-2 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                  <span class="mt-2 w-1 h-1 rounded-full bg-brand-400 shrink-0"
+                  ></span>
                   ~2 kb sequence integration
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="mt-2 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                  <span class="mt-2 w-1 h-1 rounded-full bg-brand-400 shrink-0"
+                  ></span>
                   Targeted loci (e.g., TRAC locus)
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="mt-2 w-1 h-1 rounded-full bg-brand-400 shrink-0"></span>
+                  <span class="mt-2 w-1 h-1 rounded-full bg-brand-400 shrink-0"
+                  ></span>
                   In vivo cell engineering (e.g. CAR-T)
                 </li>
               </ul>
@@ -373,35 +872,166 @@ import Layout from '../layouts/Layout.astro';
             <div class="bg-white p-8 sm:p-10 sm:col-span-2">
               <div class="grid sm:grid-cols-2 gap-8 items-start">
                 <div>
-                  <p class="text-brand-600 text-[11px] font-medium tracking-widest uppercase mb-5">Protein Replacement</p>
-                  <h3 class="font-serif text-xl text-warm-900 mb-3">In Vivo RNA Expression</h3>
-                  <p class="text-warm-600 text-sm leading-relaxed">Direct expression of functional proteins via high-expression IVT RNA constructs, enabling therapeutic protein delivery beyond the limits of AAV.</p>
+                  <p
+                    class="text-brand-600 text-[11px] font-medium tracking-widest uppercase mb-5"
+                  >
+                    Protein Replacement
+                  </p>
+                  <h3 class="font-serif text-xl text-warm-900 mb-3">
+                    In Vivo RNA Expression
+                  </h3>
+                  <p class="text-warm-600 text-sm leading-relaxed">
+                    Direct expression of functional proteins via high-expression
+                    IVT RNA constructs, enabling therapeutic protein delivery
+                    beyond the limits of AAV.
+                  </p>
                 </div>
                 <div class="pt-1">
                   <!-- Constellation-style placeholder illustration -->
-                  <div class="aspect-[4/3] rounded-xl bg-brand-50/60 border border-brand-100 flex items-center justify-center">
-                    <svg class="w-32 h-24 text-brand-300" viewBox="0 0 120 90" fill="none">
+                  <div
+                    class="aspect-[4/3] rounded-xl bg-brand-50/60 border border-brand-100 flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-32 h-24 text-brand-300"
+                      viewBox="0 0 120 90"
+                      fill="none"
+                    >
                       <!-- Mini constellation: protein structure hint -->
-                      <circle cx="30" cy="20" r="1.5" fill="currentColor" opacity="0.6" />
-                      <circle cx="60" cy="12" r="2" fill="currentColor" opacity="0.7" />
-                      <circle cx="90" cy="25" r="1.5" fill="currentColor" opacity="0.6" />
-                      <circle cx="45" cy="45" r="2.5" fill="currentColor" opacity="0.8" />
-                      <circle cx="75" cy="50" r="2" fill="currentColor" opacity="0.7" />
-                      <circle cx="55" cy="75" r="2" fill="currentColor" opacity="0.7" />
-                      <circle cx="20" cy="60" r="1.5" fill="currentColor" opacity="0.5" />
-                      <circle cx="100" cy="65" r="1.5" fill="currentColor" opacity="0.5" />
-                      <line x1="30" y1="20" x2="60" y2="12" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
-                      <line x1="60" y1="12" x2="90" y2="25" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
-                      <line x1="30" y1="20" x2="45" y2="45" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
-                      <line x1="60" y1="12" x2="45" y2="45" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
-                      <line x1="90" y1="25" x2="75" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
-                      <line x1="45" y1="45" x2="75" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
-                      <line x1="45" y1="45" x2="55" y2="75" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
-                      <line x1="75" y1="50" x2="55" y2="75" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
-                      <line x1="20" y1="60" x2="45" y2="45" stroke="currentColor" stroke-width="0.5" opacity="0.3" />
-                      <line x1="100" y1="65" x2="75" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.3" />
+                      <circle
+                        cx="30"
+                        cy="20"
+                        r="1.5"
+                        fill="currentColor"
+                        opacity="0.6"></circle>
+                      <circle
+                        cx="60"
+                        cy="12"
+                        r="2"
+                        fill="currentColor"
+                        opacity="0.7"></circle>
+                      <circle
+                        cx="90"
+                        cy="25"
+                        r="1.5"
+                        fill="currentColor"
+                        opacity="0.6"></circle>
+                      <circle
+                        cx="45"
+                        cy="45"
+                        r="2.5"
+                        fill="currentColor"
+                        opacity="0.8"></circle>
+                      <circle
+                        cx="75"
+                        cy="50"
+                        r="2"
+                        fill="currentColor"
+                        opacity="0.7"></circle>
+                      <circle
+                        cx="55"
+                        cy="75"
+                        r="2"
+                        fill="currentColor"
+                        opacity="0.7"></circle>
+                      <circle
+                        cx="20"
+                        cy="60"
+                        r="1.5"
+                        fill="currentColor"
+                        opacity="0.5"></circle>
+                      <circle
+                        cx="100"
+                        cy="65"
+                        r="1.5"
+                        fill="currentColor"
+                        opacity="0.5"></circle>
+                      <line
+                        x1="30"
+                        y1="20"
+                        x2="60"
+                        y2="12"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                        opacity="0.4"></line>
+                      <line
+                        x1="60"
+                        y1="12"
+                        x2="90"
+                        y2="25"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                        opacity="0.4"></line>
+                      <line
+                        x1="30"
+                        y1="20"
+                        x2="45"
+                        y2="45"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                        opacity="0.4"></line>
+                      <line
+                        x1="60"
+                        y1="12"
+                        x2="45"
+                        y2="45"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                        opacity="0.4"></line>
+                      <line
+                        x1="90"
+                        y1="25"
+                        x2="75"
+                        y2="50"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                        opacity="0.4"></line>
+                      <line
+                        x1="45"
+                        y1="45"
+                        x2="75"
+                        y2="50"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                        opacity="0.4"></line>
+                      <line
+                        x1="45"
+                        y1="45"
+                        x2="55"
+                        y2="75"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                        opacity="0.4"></line>
+                      <line
+                        x1="75"
+                        y1="50"
+                        x2="55"
+                        y2="75"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                        opacity="0.4"></line>
+                      <line
+                        x1="20"
+                        y1="60"
+                        x2="45"
+                        y2="45"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                        opacity="0.3"></line>
+                      <line
+                        x1="100"
+                        y1="65"
+                        x2="75"
+                        y2="50"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                        opacity="0.3"></line>
                       <!-- Glow on central node -->
-                      <circle cx="45" cy="45" r="8" fill="currentColor" opacity="0.06" />
+                      <circle
+                        cx="45"
+                        cy="45"
+                        r="8"
+                        fill="currentColor"
+                        opacity="0.06"></circle>
                     </svg>
                   </div>
                 </div>
@@ -414,10 +1044,16 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- VALIDATION — dark section with stars -->
-  <section class="fade-section relative py-28 sm:py-36 bg-night-900 text-white overflow-hidden">
+  <section
+    class="fade-section relative py-28 sm:py-36 bg-night-900 text-white overflow-hidden"
+  >
     <!-- Space background image -->
     <div class="absolute inset-0" aria-hidden="true">
-      <img src="/space1.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-lighten" />
+      <img
+        src="/space1.png"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-lighten"
+      />
     </div>
     <!-- Stars -->
     <div class="absolute inset-0" aria-hidden="true">
@@ -441,29 +1077,58 @@ import Layout from '../layouts/Layout.astro';
     <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
       <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         <div>
-          <p class="text-brand-300 text-xs font-medium tracking-widest uppercase mb-4">Validation</p>
-          <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight mb-6">
+          <p
+            class="text-brand-300 text-xs font-medium tracking-widest uppercase mb-4"
+          >
+            Validation
+          </p>
+          <h2
+            class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight mb-6"
+          >
             Engineered for real-world performance
           </h2>
           <p class="text-warm-400 text-lg leading-relaxed">
-            Our platform is built not only for innovation — but for translatability. Every component is designed with clinical development in mind.
+            Our platform is built not only for innovation — but for
+            translatability. Every component is designed with clinical
+            development in mind.
           </p>
         </div>
 
         <div class="space-y-8">
           <div class="flex items-start gap-6">
-            <div class="font-serif text-4xl text-brand-300 leading-none shrink-0 w-24">>9 kb</div>
-            <p class="text-warm-400 leading-relaxed">Successfully delivered large RNA constructs exceeding conventional payload limits</p>
+            <div
+              class="font-serif text-4xl text-brand-300 leading-none shrink-0 w-24"
+            >
+              >9 kb
+            </div>
+            <p class="text-warm-400 leading-relaxed">
+              Successfully delivered large RNA constructs exceeding conventional
+              payload limits
+            </p>
           </div>
           <div class="h-px bg-white/10"></div>
           <div class="flex items-start gap-6">
-            <div class="font-serif text-3xl text-brand-300 leading-none shrink-0 w-24 pt-0.5">Multi</div>
-            <p class="text-warm-400 leading-relaxed">Demonstrated coordinated multi-component expression from a single transcript</p>
+            <div
+              class="font-serif text-3xl text-brand-300 leading-none shrink-0 w-24 pt-0.5"
+            >
+              Multi
+            </div>
+            <p class="text-warm-400 leading-relaxed">
+              Demonstrated coordinated multi-component expression from a single
+              transcript
+            </p>
           </div>
           <div class="h-px bg-white/10"></div>
           <div class="flex items-start gap-6">
-            <div class="font-serif text-3xl text-brand-300 leading-none shrink-0 w-24 pt-0.5">LNP+</div>
-            <p class="text-warm-400 leading-relaxed">Enhanced delivery performance compared to conventional transfection systems</p>
+            <div
+              class="font-serif text-3xl text-brand-300 leading-none shrink-0 w-24 pt-0.5"
+            >
+              LNP+
+            </div>
+            <p class="text-warm-400 leading-relaxed">
+              Enhanced delivery performance compared to conventional
+              transfection systems
+            </p>
           </div>
         </div>
       </div>
@@ -474,69 +1139,117 @@ import Layout from '../layouts/Layout.astro';
   <section id="applications" class="fade-section relative py-28 sm:py-36">
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="max-w-2xl mb-20">
-        <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Applications</p>
-        <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6">
+        <p
+          class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4"
+        >
+          Applications
+        </p>
+        <h2
+          class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6"
+        >
           Targeting diseases where simpler tools fail
         </h2>
         <p class="text-warm-700 text-lg leading-relaxed">
-          Designed for therapeutic challenges that cannot be solved with single-edit approaches.
+          Designed for therapeutic challenges that cannot be solved with
+          single-edit approaches.
         </p>
       </div>
 
       <div class="space-y-0 divide-y divide-warm-200">
-        <div class="grid md:grid-cols-12 gap-6 md:gap-12 py-12 first:pt-0 group">
+        <div
+          class="grid md:grid-cols-12 gap-6 md:gap-12 py-12 first:pt-0 group"
+        >
           <div class="md:col-span-1">
-            <div class="w-10 h-10 rounded-full bg-emerald-50 flex items-center justify-center">
+            <div
+              class="w-10 h-10 rounded-full bg-emerald-50 flex items-center justify-center"
+            >
               <div class="w-2.5 h-2.5 rounded-full bg-emerald-500"></div>
             </div>
           </div>
           <div class="md:col-span-4">
-            <h3 class="font-serif text-2xl text-warm-900 mb-2">Liver-Directed RNA Medicine</h3>
-            <p class="text-warm-600 leading-relaxed">Precision hepatic gene modulation for chronic conditions with high unmet need.</p>
+            <h3 class="font-serif text-2xl text-warm-900 mb-2">
+              Liver-Directed RNA Medicine
+            </h3>
+            <p class="text-warm-600 leading-relaxed">
+              Precision hepatic gene modulation for chronic conditions with high
+              unmet need.
+            </p>
           </div>
           <div class="md:col-span-7">
             <div class="grid sm:grid-cols-3 gap-4 text-sm text-warm-600">
-              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Chronic viral diseases (HBV)</div>
-              <div class="bg-warm-100/60 rounded-xl px-5 py-4">High-burden protein deficiencies</div>
-              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Precision gene modulation</div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">
+                Chronic viral diseases (HBV)
+              </div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">
+                High-burden protein deficiencies
+              </div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">
+                Precision gene modulation
+              </div>
             </div>
           </div>
         </div>
 
         <div class="grid md:grid-cols-12 gap-6 md:gap-12 py-12 group">
           <div class="md:col-span-1">
-            <div class="w-10 h-10 rounded-full bg-violet-50 flex items-center justify-center">
+            <div
+              class="w-10 h-10 rounded-full bg-violet-50 flex items-center justify-center"
+            >
               <div class="w-2.5 h-2.5 rounded-full bg-violet-500"></div>
             </div>
           </div>
           <div class="md:col-span-4">
-            <h3 class="font-serif text-2xl text-warm-900 mb-2">Genetic Disorders</h3>
-            <p class="text-warm-600 leading-relaxed">Multi-component strategies for diseases beyond the reach of single-edit tools.</p>
+            <h3 class="font-serif text-2xl text-warm-900 mb-2">
+              Genetic Disorders
+            </h3>
+            <p class="text-warm-600 leading-relaxed">
+              Multi-component strategies for diseases beyond the reach of
+              single-edit tools.
+            </p>
           </div>
           <div class="md:col-span-7">
             <div class="grid sm:grid-cols-3 gap-4 text-sm text-warm-600">
-              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Targeted sequence modification</div>
-              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Defined mutation sites</div>
-              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Delivery-enabled contexts</div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">
+                Targeted sequence modification
+              </div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">
+                Defined mutation sites
+              </div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">
+                Delivery-enabled contexts
+              </div>
             </div>
           </div>
         </div>
 
         <div class="grid md:grid-cols-12 gap-6 md:gap-12 py-12 group">
           <div class="md:col-span-1">
-            <div class="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center">
+            <div
+              class="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center"
+            >
               <div class="w-2.5 h-2.5 rounded-full bg-amber-500"></div>
             </div>
           </div>
           <div class="md:col-span-4">
-            <h3 class="font-serif text-2xl text-warm-900 mb-2">Precision Oncology</h3>
-            <p class="text-warm-600 leading-relaxed">Epigenetic reprogramming and multi-target intervention in a single therapy.</p>
+            <h3 class="font-serif text-2xl text-warm-900 mb-2">
+              Precision Oncology
+            </h3>
+            <p class="text-warm-600 leading-relaxed">
+              Epigenetic reprogramming and multi-target intervention in a single
+              therapy.
+            </p>
           </div>
           <div class="md:col-span-7">
             <div class="grid sm:grid-cols-3 gap-4 text-sm text-warm-600">
-              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Tumor pathway reprogramming</div>
-              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Microenvironment modulation</div>
-              <div class="bg-warm-100/60 rounded-xl px-5 py-4">Multi-target single therapy</div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">
+                Tumor pathway reprogramming
+              </div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">
+                Microenvironment modulation
+              </div>
+              <div class="bg-warm-100/60 rounded-xl px-5 py-4">
+                Multi-target single therapy
+              </div>
             </div>
           </div>
         </div>
@@ -545,7 +1258,10 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- PARTNERSHIP CTA -->
-  <section id="contact" class="fade-section relative py-28 sm:py-36 bg-brand-50/40 overflow-hidden">
+  <section
+    id="contact"
+    class="fade-section relative py-28 sm:py-36 bg-brand-50/40 overflow-hidden"
+  >
     <!-- Stars and planet decoration -->
     <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
       <div class="star sm" style="top:10%;left:30%;"></div>
@@ -557,24 +1273,34 @@ import Layout from '../layouts/Layout.astro';
       <div class="star" style="top:15%;left:50%;"></div>
       <div class="star sm" style="top:70%;left:25%;"></div>
       <div class="star sm" style="top:90%;left:55%;"></div>
-
     </div>
 
     <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div>
-          <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6">
+          <h2
+            class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-6"
+          >
             Let's build the next generation of RNA medicine
           </h2>
           <p class="text-warm-700 text-lg leading-relaxed mb-10">
-            We collaborate with leading biopharma and research organizations to unlock new therapeutic possibilities — from multi-component genetic engineering to large payload delivery and strategies beyond conventional CRISPR.
+            We collaborate with leading biopharma and research organizations to
+            unlock new therapeutic possibilities — from multi-component genetic
+            engineering to large payload delivery and strategies beyond
+            conventional CRISPR.
           </p>
 
           <div class="flex flex-wrap gap-4">
-            <a href="mailto:partnering@astralgen.tech" class="px-7 py-3.5 rounded-full bg-brand-600 text-white font-medium hover:bg-brand-700 transition-all hover:shadow-lg hover:shadow-brand-200">
+            <a
+              href="mailto:partnering@astralgen.tech"
+              class="px-7 py-3.5 rounded-full bg-brand-600 text-white font-medium hover:bg-brand-700 transition-all hover:shadow-lg hover:shadow-brand-200"
+            >
               Start a Collaboration
             </a>
-            <a href="mailto:info@astralgen.tech" class="px-7 py-3.5 rounded-full border border-warm-300 text-warm-600 hover:border-warm-400 hover:text-warm-800 font-medium transition-all">
+            <a
+              href="mailto:info@astralgen.tech"
+              class="px-7 py-3.5 rounded-full border border-warm-300 text-warm-600 hover:border-warm-400 hover:text-warm-800 font-medium transition-all"
+            >
               Request Deck
             </a>
           </div>
@@ -585,47 +1311,182 @@ import Layout from '../layouts/Layout.astro';
           <svg class="w-full max-w-sm" viewBox="0 0 300 300" fill="none">
             <!-- Constellation connection lines -->
             <g class="text-brand-300" opacity="0.35">
-              <line x1="150" y1="40" x2="80" y2="120" stroke="currentColor" stroke-width="0.75" />
-              <line x1="150" y1="40" x2="240" y2="100" stroke="currentColor" stroke-width="0.75" />
-              <line x1="80" y1="120" x2="60" y2="200" stroke="currentColor" stroke-width="0.75" />
-              <line x1="80" y1="120" x2="150" y2="170" stroke="currentColor" stroke-width="0.75" />
-              <line x1="240" y1="100" x2="150" y2="170" stroke="currentColor" stroke-width="0.75" />
-              <line x1="240" y1="100" x2="250" y2="200" stroke="currentColor" stroke-width="0.75" />
-              <line x1="60" y1="200" x2="150" y2="260" stroke="currentColor" stroke-width="0.75" />
-              <line x1="250" y1="200" x2="150" y2="260" stroke="currentColor" stroke-width="0.75" />
-              <line x1="150" y1="170" x2="150" y2="260" stroke="currentColor" stroke-width="0.75" />
-              <line x1="60" y1="200" x2="150" y2="170" stroke="currentColor" stroke-width="0.75" />
-              <line x1="250" y1="200" x2="150" y2="170" stroke="currentColor" stroke-width="0.75" />
+              <line
+                x1="150"
+                y1="40"
+                x2="80"
+                y2="120"
+                stroke="currentColor"
+                stroke-width="0.75"></line>
+              <line
+                x1="150"
+                y1="40"
+                x2="240"
+                y2="100"
+                stroke="currentColor"
+                stroke-width="0.75"></line>
+              <line
+                x1="80"
+                y1="120"
+                x2="60"
+                y2="200"
+                stroke="currentColor"
+                stroke-width="0.75"></line>
+              <line
+                x1="80"
+                y1="120"
+                x2="150"
+                y2="170"
+                stroke="currentColor"
+                stroke-width="0.75"></line>
+              <line
+                x1="240"
+                y1="100"
+                x2="150"
+                y2="170"
+                stroke="currentColor"
+                stroke-width="0.75"></line>
+              <line
+                x1="240"
+                y1="100"
+                x2="250"
+                y2="200"
+                stroke="currentColor"
+                stroke-width="0.75"></line>
+              <line
+                x1="60"
+                y1="200"
+                x2="150"
+                y2="260"
+                stroke="currentColor"
+                stroke-width="0.75"></line>
+              <line
+                x1="250"
+                y1="200"
+                x2="150"
+                y2="260"
+                stroke="currentColor"
+                stroke-width="0.75"></line>
+              <line
+                x1="150"
+                y1="170"
+                x2="150"
+                y2="260"
+                stroke="currentColor"
+                stroke-width="0.75"></line>
+              <line
+                x1="60"
+                y1="200"
+                x2="150"
+                y2="170"
+                stroke="currentColor"
+                stroke-width="0.75"></line>
+              <line
+                x1="250"
+                y1="200"
+                x2="150"
+                y2="170"
+                stroke="currentColor"
+                stroke-width="0.75"></line>
             </g>
 
             <!-- Star nodes -->
             <g class="text-brand-500">
               <!-- Top star (largest) -->
-              <circle cx="150" cy="40" r="5" fill="currentColor" opacity="0.6" />
-              <circle cx="150" cy="40" r="14" fill="currentColor" opacity="0.04" />
+              <circle cx="150" cy="40" r="5" fill="currentColor" opacity="0.6"
+              ></circle>
+              <circle cx="150" cy="40" r="14" fill="currentColor" opacity="0.04"
+              ></circle>
               <!-- Left -->
-              <circle cx="80" cy="120" r="3.5" fill="currentColor" opacity="0.5" />
-              <circle cx="80" cy="120" r="10" fill="currentColor" opacity="0.04" />
+              <circle cx="80" cy="120" r="3.5" fill="currentColor" opacity="0.5"
+              ></circle>
+              <circle cx="80" cy="120" r="10" fill="currentColor" opacity="0.04"
+              ></circle>
               <!-- Right -->
-              <circle cx="240" cy="100" r="3.5" fill="currentColor" opacity="0.5" />
-              <circle cx="240" cy="100" r="10" fill="currentColor" opacity="0.04" />
+              <circle
+                cx="240"
+                cy="100"
+                r="3.5"
+                fill="currentColor"
+                opacity="0.5"></circle>
+              <circle
+                cx="240"
+                cy="100"
+                r="10"
+                fill="currentColor"
+                opacity="0.04"></circle>
               <!-- Center (brightest — the hub) -->
-              <circle cx="150" cy="170" r="6" fill="currentColor" opacity="0.7" />
-              <circle cx="150" cy="170" r="18" fill="currentColor" opacity="0.05" />
+              <circle cx="150" cy="170" r="6" fill="currentColor" opacity="0.7"
+              ></circle>
+              <circle
+                cx="150"
+                cy="170"
+                r="18"
+                fill="currentColor"
+                opacity="0.05"></circle>
               <!-- Bottom left -->
-              <circle cx="60" cy="200" r="3" fill="currentColor" opacity="0.45" />
+              <circle cx="60" cy="200" r="3" fill="currentColor" opacity="0.45"
+              ></circle>
               <!-- Bottom right -->
-              <circle cx="250" cy="200" r="3" fill="currentColor" opacity="0.45" />
+              <circle cx="250" cy="200" r="3" fill="currentColor" opacity="0.45"
+              ></circle>
               <!-- Bottom center (second largest) -->
-              <circle cx="150" cy="260" r="4.5" fill="currentColor" opacity="0.55" />
-              <circle cx="150" cy="260" r="12" fill="currentColor" opacity="0.04" />
+              <circle
+                cx="150"
+                cy="260"
+                r="4.5"
+                fill="currentColor"
+                opacity="0.55"></circle>
+              <circle
+                cx="150"
+                cy="260"
+                r="12"
+                fill="currentColor"
+                opacity="0.04"></circle>
             </g>
 
             <!-- Labels -->
-            <text x="150" y="24" text-anchor="middle" fill="currentColor" font-size="9" font-family="DM Sans" class="text-warm-500" opacity="0.7">Encode</text>
-            <text x="45" y="125" text-anchor="middle" fill="currentColor" font-size="9" font-family="DM Sans" class="text-warm-500" opacity="0.7">Deliver</text>
-            <text x="275" y="105" text-anchor="middle" fill="currentColor" font-size="9" font-family="DM Sans" class="text-warm-500" opacity="0.7">Target</text>
-            <text x="150" y="290" text-anchor="middle" fill="currentColor" font-size="10" font-weight="500" font-family="DM Sans" class="text-brand-600" opacity="0.8">Therapeutic Action</text>
+            <text
+              x="150"
+              y="24"
+              text-anchor="middle"
+              fill="currentColor"
+              font-size="9"
+              font-family="DM Sans"
+              class="text-warm-500"
+              opacity="0.7">Encode</text
+            >
+            <text
+              x="45"
+              y="125"
+              text-anchor="middle"
+              fill="currentColor"
+              font-size="9"
+              font-family="DM Sans"
+              class="text-warm-500"
+              opacity="0.7">Deliver</text
+            >
+            <text
+              x="275"
+              y="105"
+              text-anchor="middle"
+              fill="currentColor"
+              font-size="9"
+              font-family="DM Sans"
+              class="text-warm-500"
+              opacity="0.7">Target</text
+            >
+            <text
+              x="150"
+              y="290"
+              text-anchor="middle"
+              fill="currentColor"
+              font-size="10"
+              font-weight="500"
+              font-family="DM Sans"
+              class="text-brand-600"
+              opacity="0.8">Therapeutic Action</text
+            >
           </svg>
         </div>
       </div>
@@ -661,12 +1522,22 @@ import Layout from '../layouts/Layout.astro';
   <section id="company" class="fade-section relative py-28 sm:py-36">
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="max-w-3xl">
-        <p class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4">Company</p>
-        <h2 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-8">
+        <p
+          class="text-brand-600 text-xs font-medium tracking-widest uppercase mb-4"
+        >
+          Company
+        </p>
+        <h2
+          class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight text-warm-950 mb-8"
+        >
           Driven by science.<br />Built for impact.
         </h2>
         <p class="text-warm-700 text-xl leading-relaxed">
-          Astral Genetics is advancing a new class of RNA therapeutics designed to address the most challenging diseases — where precision, scale, and coordination are essential. We combine innovative molecular design with next-generation delivery systems to transform genetic medicine from fragmented solutions into unified platforms.
+          Astral Genetics is advancing a new class of RNA therapeutics designed
+          to address the most challenging diseases — where precision, scale, and
+          coordination are essential. We combine innovative molecular design
+          with next-generation delivery systems to transform genetic medicine
+          from fragmented solutions into unified platforms.
         </p>
       </div>
     </div>
@@ -678,30 +1549,79 @@ import Layout from '../layouts/Layout.astro';
       <div class="py-16 grid md:grid-cols-3 gap-10 items-start">
         <div>
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-sm font-semibold text-white">AG</div>
-            <span class="text-sm font-medium tracking-wider uppercase text-warm-700">Astral Genetics</span>
+            <div
+              class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-sm font-semibold text-white"
+            >
+              AG
+            </div>
+            <span
+              class="text-sm font-medium tracking-wider uppercase text-warm-700"
+              >Astral Genetics</span
+            >
           </div>
-          <p class="text-warm-400 text-sm leading-relaxed max-w-xs">Redefining the future of RNA medicine through unified platform design.</p>
+          <p class="text-warm-600 text-sm leading-relaxed max-w-xs">
+            Redefining the future of RNA medicine through unified platform
+            design.
+          </p>
         </div>
 
-        <div class="flex flex-col gap-3 text-sm text-warm-500">
-          <a href="#platform" class="hover:text-warm-800 transition-colors">Platform</a>
-          <a href="#capabilities" class="hover:text-warm-800 transition-colors">Science</a>
-          <a href="#applications" class="hover:text-warm-800 transition-colors">Applications</a>
-          <a href="#company" class="hover:text-warm-800 transition-colors">Company</a>
+        <div class="flex flex-col gap-3 text-sm text-warm-600">
+          <a href="#platform" class="hover:text-warm-800 transition-colors"
+            >Platform</a
+          >
+          <a href="#capabilities" class="hover:text-warm-800 transition-colors"
+            >Science</a
+          >
+          <a href="#applications" class="hover:text-warm-800 transition-colors"
+            >Applications</a
+          >
+          <a href="#company" class="hover:text-warm-800 transition-colors"
+            >Company</a
+          >
         </div>
 
         <div>
-          <p class="text-xs font-medium tracking-widest uppercase text-warm-400 mb-3">Contact</p>
-          <div class="flex flex-col gap-2 text-sm text-warm-500">
-            <a href="mailto:info@astralgen.tech" class="hover:text-warm-800 transition-colors">info@astralgen.tech</a>
-            <a href="mailto:partnering@astralgen.tech" class="hover:text-warm-800 transition-colors">partnering@astralgen.tech</a>
+          <p
+            class="text-xs font-medium tracking-widest uppercase text-warm-800 mb-3"
+          >
+            Contact
+          </p>
+          <div class="flex flex-col gap-2 text-sm text-warm-600">
+            <a
+              href="mailto:info@astralgen.tech"
+              class="hover:text-warm-800 transition-colors"
+              >info@astralgen.tech</a
+            >
+            <a
+              href="mailto:partnering@astralgen.tech"
+              class="hover:text-warm-800 transition-colors"
+              >partnering@astralgen.tech</a
+            >
+            <div class="mt-2 flex flex-col gap-1">
+              <span>12358 Parklawn Drive Suite 261</span>
+              <span>Rockville, MD 20852</span>
+            </div>
+            <!-- Responsive map wrapper -->
+            <div
+              class="relative w-full mt-2 rounded-lg overflow-hidden"
+              style="padding-bottom: 56.25%;"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.0493868128465!2d-77.1144088226837!3d39.05978867168981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cdd2e7e06253%3A0xd8b64548f6ad4b5c!2sGreencourt%20Innovation%20Center!5e0!3m2!1sen!2sus!4v1775955374215!5m2!1sen!2sus"
+                class="absolute inset-0 w-full h-full"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="py-6 border-t border-warm-200">
-        <p class="text-warm-400 text-xs">&copy; 2026 Astral Genetics. All Rights Reserved.</p>
+        <p class="text-warm-400 text-xs">
+          &copy; 2026 Astral Genetics. All Rights Reserved.
+        </p>
       </div>
     </div>
   </footer>
@@ -718,11 +1638,20 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .star::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     background: #7a9fcb;
-    clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
+    clip-path: polygon(
+      50% 0%,
+      60% 40%,
+      100% 50%,
+      60% 60%,
+      50% 100%,
+      40% 60%,
+      0% 50%,
+      40% 40%
+    );
   }
 
   .star.bright {
@@ -748,11 +1677,20 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .star-light::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     background: white;
-    clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
+    clip-path: polygon(
+      50% 0%,
+      60% 40%,
+      100% 50%,
+      60% 60%,
+      50% 100%,
+      40% 60%,
+      0% 50%,
+      40% 40%
+    );
   }
 
   .star-light.bright {
@@ -769,31 +1707,64 @@ import Layout from '../layouts/Layout.astro';
   }
 
   /* Stagger twinkle timings */
-  .star:nth-child(2n), .star-light:nth-child(2n) { animation-delay: -1.5s; }
-  .star:nth-child(3n), .star-light:nth-child(3n) { animation-delay: -2.8s; }
-  .star:nth-child(5n), .star-light:nth-child(5n) { animation-delay: -0.7s; }
-  .star:nth-child(7n), .star-light:nth-child(7n) { animation-delay: -3.3s; }
-  .star:nth-child(4n), .star-light:nth-child(4n) { animation-duration: 5s; }
-  .star:nth-child(6n), .star-light:nth-child(6n) { animation-duration: 6s; }
-  .star:nth-child(8n), .star-light:nth-child(8n) { animation-duration: 7s; animation-delay: -2s; }
-
-  @keyframes twinkle {
-    0%, 100% { opacity: var(--tw-opacity, 0.2); }
-    50% { opacity: 0.04; }
+  .star:nth-child(2n),
+  .star-light:nth-child(2n) {
+    animation-delay: -1.5s;
+  }
+  .star:nth-child(3n),
+  .star-light:nth-child(3n) {
+    animation-delay: -2.8s;
+  }
+  .star:nth-child(5n),
+  .star-light:nth-child(5n) {
+    animation-delay: -0.7s;
+  }
+  .star:nth-child(7n),
+  .star-light:nth-child(7n) {
+    animation-delay: -3.3s;
+  }
+  .star:nth-child(4n),
+  .star-light:nth-child(4n) {
+    animation-duration: 5s;
+  }
+  .star:nth-child(6n),
+  .star-light:nth-child(6n) {
+    animation-duration: 6s;
+  }
+  .star:nth-child(8n),
+  .star-light:nth-child(8n) {
+    animation-duration: 7s;
+    animation-delay: -2s;
   }
 
-  .star.bright { --tw-opacity: 0.3; }
-  .star-light { --tw-opacity: 0.3; }
-  .star-light.bright { --tw-opacity: 0.5; }
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: var(--tw-opacity, 0.2);
+    }
+    50% {
+      opacity: 0.04;
+    }
+  }
+
+  .star.bright {
+    --tw-opacity: 0.3;
+  }
+  .star-light {
+    --tw-opacity: 0.3;
+  }
+  .star-light.bright {
+    --tw-opacity: 0.5;
+  }
 </style>
 
 <script>
   // Mobile menu
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('mobile-menu');
-  toggle?.addEventListener('click', () => menu?.classList.toggle('hidden'));
-  menu?.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => menu?.classList.add('hidden'));
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+  toggle?.addEventListener("click", () => menu?.classList.toggle("hidden"));
+  menu?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => menu?.classList.add("hidden"));
   });
 
   // Scroll-triggered fade-in
@@ -801,12 +1772,14 @@ import Layout from '../layouts/Layout.astro';
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+          entry.target.classList.add("visible");
         }
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0.1 },
   );
 
-  document.querySelectorAll('.fade-section').forEach((el) => observer.observe(el));
+  document
+    .querySelectorAll(".fade-section")
+    .forEach((el) => observer.observe(el));
 </script>
